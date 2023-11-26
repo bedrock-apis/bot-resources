@@ -1,0 +1,32 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "{{pack.name}}",
+        "description": "{{pack.description}}",
+        "uuid": "{{uuid.new}}",
+        "version": "{{pack.stable}}",
+        "min_engine_version": "[[mc.stable]]"
+    },
+    "modules": [
+        {
+            "type": "script",
+            "uuid": "{{uuid.new}}",
+            "entry": "scripts/index.js",
+            "version": [ 0, 1, 0 ]
+        }
+    ],
+    "capabilities": [ "script_eval" ],
+
+    "dependencies": [
+        {
+            "module_name": "{{module.server.name}}",
+            "uuid":"{{module.server.uuid}}",
+            "version": "{{module.server.latest}}"
+        },
+        {
+            "module_name": "{{module.server-ui.name}}",
+            "uuid":"{{module.server-ui.uuid}}",
+            "version": "{{module.server-ui.latest}}"
+        }
+    ]
+}
