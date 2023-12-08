@@ -1,0 +1,6 @@
+{
+    "type":"manifest-templates",
+    "files":{
+        "test-manifest":"./test_manifest.json"
+    }
+}

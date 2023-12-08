@@ -1,2 +1,2 @@
 # bot-resources
-Basic bot resources, like manifest templates, and more!
+Do not edit contents or folder contents!

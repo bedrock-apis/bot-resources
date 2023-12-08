@@ -1,0 +1,29 @@
+[
+    "uuid.new",
+    "mc.stable",
+    "mc.beta",
+
+    "module.common.latest",
+    "module.common.beta",
+
+    "module.server.latest",
+    "module.server.beta",
+
+    "module.server-ui.latest",
+    "module.server-ui.beta",
+
+    "module.server-editor.latest",
+    "module.server-editor.beta",
+
+    "module.server-net.latest",
+    "module.server-net.beta",
+
+    "module.server-admin.latest",
+    "module.server-admin.beta",
+
+    "module.server-gametest.latest",
+    "module.server-gametest.beta",
+
+    "module.server-editor-bindings.latest",
+    "module.server-editor-bindings.beta"
+]
