@@ -1,6 +1,0 @@
-{
-    "type":"manifest-teplates",
-    "include":[
-        "./test_manifest.json"
-    ]
-}
