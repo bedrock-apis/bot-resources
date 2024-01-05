@@ -16,17 +16,16 @@
         }
     ],
     "capabilities": [ "script_eval" ],
-
     "dependencies": [
         {
             "module_name": "{{module.server.name}}",
             "uuid":"{{module.server.uuid}}",
-            "version": "{{module.server.latest}}"
+            "version": "{{module.server.version}}"
         },
         {
             "module_name": "{{module.server-ui.name}}",
             "uuid":"{{module.server-ui.uuid}}",
-            "version": "{{module.server-ui.latest}}"
+            "version": "{{module.server-ui.version}}"
         }
     ]
 }

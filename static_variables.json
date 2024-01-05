@@ -3,9 +3,9 @@
     "variables":{
         "pack.name":"pack.name",
         "pack.description":"pack.description",
-        "pack.latest":"1.0.0",
-        "pack.beta":"1.0.0-beta",
+        "pack.stable":"1.0.0",
         "pack.preview":"1.0.0-preview",
+        "pack.beta":"1.0.0-beta",
         "pack.alpha":"0.1.0-alpha",
         "module.common.name":"@minecraft/common",
         "module.server.name":"@minecraft/server",
