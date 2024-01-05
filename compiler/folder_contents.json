@@ -1,4 +1,4 @@
 {
-    "type":"script-resources",
+    "type":"script_compiler",
     "compiler-lib":"./lib.es2022.d.ts"
 }

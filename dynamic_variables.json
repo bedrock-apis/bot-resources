@@ -1,29 +1,55 @@
 [
-    "uuid.new",
+    //This file is not a valid content file, its here for us to know what variables are build-in bot
+    "context.name",
+    "context.displayName",
+    "context.userName",
+    "context.userDisplayName",
+    "context.userId",
+    "context.guildId",
+    "context.commandName",
+    "context.time",
+    "context.date",
+    "context.milliseconds",
+    "new.uuid",
+
     "mc.stable",
     "mc.beta",
 
-    "module.common.latest",
-    "module.common.beta",
+    "module.common.version",
+    "module.common.version.preview",
 
-    "module.server.latest",
-    "module.server.beta",
+    "module.server.version",
+    "module.server.version.preview",
+    "module.server.version.experimental",
+    "module.server.version.preview-experimental",
 
-    "module.server-ui.latest",
-    "module.server-ui.beta",
+    "module.server-ui.version",
+    "module.server-ui.version.preview",
+    "module.server-ui.version.experimental",
+    "module.server-ui.version.preview-experimental",
 
-    "module.server-editor.latest",
-    "module.server-editor.beta",
+    "module.server-gametest.version",
+    "module.server-gametest.version.preview",
+    "module.server-gametest.version.experimental",
+    "module.server-gametest.version.preview-experimental",
 
-    "module.server-net.latest",
-    "module.server-net.beta",
+    "module.server-admin.version",
+    "module.server-admin.version.preview",
+    "module.server-admin.version.experimental",
+    "module.server-admin.version.preview-experimental",
 
-    "module.server-admin.latest",
-    "module.server-admin.beta",
+    "module.server-net.version",
+    "module.server-net.version.preview",
+    "module.server-net.version.experimental",
+    "module.server-net.version.preview-experimental",
 
-    "module.server-gametest.latest",
-    "module.server-gametest.beta",
-
-    "module.server-editor-bindings.latest",
-    "module.server-editor-bindings.beta"
+    "module.server-editor.version",
+    "module.server-editor.version.preview",
+    "module.server-editor.version.experimental",
+    "module.server-editor.version.preview-experimental"
+    
+    //"module.server-editor-bindings.version",
+    //"module.server-editor-bindings.version.preview",
+    //"module.server-editor-bindings.version.experimental",
+    //"module.server-editor-bindings.version.preview-experimental"
 ]

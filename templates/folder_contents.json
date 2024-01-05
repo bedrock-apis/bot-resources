@@ -1,6 +1,6 @@
 {
-    "type":"manifest-templates",
-    "files":{
+    "type":"templates",
+    "templates":{
         "test-manifest":"./test_manifest.json"
     }
 }
