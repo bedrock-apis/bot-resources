@@ -3,14 +3,14 @@
     "header": {
         "name": "{{pack.name}}",
         "description": "{{pack.description}}",
-        "uuid": "{{uuid.new}}",
+        "uuid": "{{new.uuid}}",
         "version": "{{pack.stable}}",
         "min_engine_version": "[[mc.stable]]"
     },
     "modules": [
         {
             "type": "script",
-            "uuid": "{{uuid.new}}",
+            "uuid": "{{new.uuid}}",
             "entry": "scripts/index.js",
             "version": [ 0, 1, 0 ]
         }
