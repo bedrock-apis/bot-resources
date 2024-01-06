@@ -1,0 +1,31 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "{{context.user-display-name}}'s Pack",
+        "description": "{{context.user-display-name}}'s Description - {{context.year}}",
+        "uuid": "{{new.uuid}}",
+        "version": "{{pack.stable}}",
+        "min_engine_version": "[[mc.stable.engine-complex]]"
+    },
+    "modules": [
+        {
+            "type": "script",
+            "uuid": "{{new.uuid}}",
+            "entry": "scripts/index.js",
+            "version": [ 0, 1, 0 ]
+        }
+    ],
+    "capabilities": [ "script_eval" ],
+    "dependencies": [
+        {
+            "module_name": "{{module.server.name}}",
+            "uuid":"{{module.server.uuid}}",
+            "version": "{{module.server.version-experimental}}"
+        },
+        {
+            "module_name": "{{module.server-ui.name}}",
+            "uuid":"{{module.server-ui.uuid}}",
+            "version": "{{module.server-ui.version-experimental}}"
+        }
+    ]
+}
