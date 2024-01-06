@@ -1,6 +1,7 @@
 {
     "type":"templates",
     "templates":{
-        "test-manifest":"./test_manifest.json"
+        "test-manifest":"./test_manifest.json",
+        "license-mit":"./MIT_LISENCE.txt"
     }
 }

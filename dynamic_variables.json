@@ -1,16 +1,18 @@
 [
-    //This file is not a valid content file, its here for us to know what variables are build-in bot
-    "context.name",
-    "context.display-name",
-    "context.user-name",
+    //This file is not a valid content file, its here for us to know what variables are build-in
+    "context.name", //bot name
+    "context.display-name", //bot display name
+    "context.user-name", //name of executor /template for example
     "context.user-display-name",
     "context.user-id",
-    "context.guild-id",
-    "context.command-name",
+    "context.guild-id", //discord server id
+    "context.command-name", //execution name (command name)
     "context.command-id",
-    "context.time",
-    "context.date",
-    "context.milliseconds",
+    "context.time", //current time
+    "context.date", //current date
+    "context.milliseconds", //current time in milliseconds
+    "context.seconds", //current time in seconds
+    "context.year", //current year (2024)
     "new.uuid",
 
     "mc.stable",
