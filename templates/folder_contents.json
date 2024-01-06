@@ -2,6 +2,11 @@
     "type":"templates",
     "templates":{
         "test-manifest":"./test_manifest.json",
-        "license-mit":"./MIT_LISENCE.txt"
+        "license-mit":"./MIT_LISENCE.txt",
+        "test-license":{
+            "file":"./MIT_LISENCE.txt",
+            "name":"MIT LICENSE Template - {{context.year}}",
+            "description":"This license is auto-generated. Lmao"
+        }
     }
 }
