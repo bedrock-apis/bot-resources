@@ -1,6 +1,6 @@
 {
     "type":"fqa",
     "files":[
-        
+        "./scripting-fqa/scripting_test.json"
     ]
 }

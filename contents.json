@@ -1,7 +1,9 @@
 [
     "./templates/folder_contents.json",
     "./resources/folder_contents.json",
+
     "./fqa/folder_contents.json",
+    
     "./compiler/folder_contents.json",
     "./static_variables.json"
 ]
