@@ -5,7 +5,7 @@
         "description": "{{pack.description}}",
         "uuid": "{{new.uuid}}",
         "version": "{{pack.stable}}",
-        "min_engine_version": "[[mc.stable]]"
+        "min_engine_version": "[[mc.stable.engine]]"
     },
     "modules": [
         {
