@@ -1,1 +1,0 @@
-You can create a manifest template by adding json file and its path to folder_contents.json
