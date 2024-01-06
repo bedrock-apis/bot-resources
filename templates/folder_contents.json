@@ -1,12 +1,20 @@
 {
     "type":"templates",
     "templates":{
-        "test-manifest":"./test_manifest.json",
-        "license-mit":"./MIT_LISENCE.txt",
-        "test-license":{
+        "bp-manifest-scripts-stable":{
+            "file":"./script_stable_manifest.json",
+            "name":"Behavior Pack Manifest - Scripting",
+            "description":"The **Behavior Pack Manifest** is a file that contains metadata about a behavior pack, such as its name, description, and version. It also specifies the files that make up the behavior pack, including the scripts that define the behavior of entities in Minecraft.\n\n**Experimental Scripting** is a feature that allows creators to write JavaScript code to modify the behavior of entities in Minecraft."
+        },
+        "bp-manifest-scripts-beta":{
+            "file":"./script_beta_manifest.json",
+            "name":"Behavior Pack Manifest - Experminetal Scripting",
+            "description":"The **Behavior Pack Manifest** is a file that contains metadata about a behavior pack, such as its name, description, and version. It also specifies the files that make up the behavior pack, including the scripts that define the behavior of entities in Minecraft.\n\n**Experimental Scripting** is a feature that allows creators to write JavaScript code to modify the behavior of entities in Minecraft. The Script API is currently in active development, and breaking changes are frequent."
+        },
+        "mit-license":{
             "file":"./MIT_LISENCE.txt",
             "name":"MIT LICENSE Template - {{context.year}}",
-            "description":"This license is auto-generated. Lmao"
+            "description":"The MIT License is a permissive free software license that originated at the Massachusetts Institute of Technology (MIT) in the late 1980s. The license allows anyone to use, copy, modify, merge, publish, distribute, sublicense, and sell the software without any restrictions."
         }
     }
 }

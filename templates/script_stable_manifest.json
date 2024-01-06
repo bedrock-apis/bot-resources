@@ -1,11 +1,11 @@
 {
     "format_version": 2,
     "header": {
-        "name": "{{pack.name}}",
-        "description": "{{pack.description}}",
+        "name": "{{context.user-display-name}}'s Pack",
+        "description": "{{context.user-display-name}}'s Description - {{context.year}}",
         "uuid": "{{new.uuid}}",
         "version": "{{pack.stable}}",
-        "min_engine_version": "[[mc.stable.engine]]"
+        "min_engine_version": "[[mc.stable.engine-complex]]"
     },
     "modules": [
         {
