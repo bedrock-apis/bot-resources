@@ -6,8 +6,6 @@
     "context.user-display-name",
     "context.user-id",
     "context.guild-id", //discord server id
-    "context.command-name", //execution name (command name)
-    "context.command-id",
     "context.time", //current time
     "context.date", //current date
     "context.milliseconds", //current time in milliseconds

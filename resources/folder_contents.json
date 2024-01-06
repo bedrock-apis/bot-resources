@@ -1,4 +1,6 @@
 {
     "type":"resources",
-    "images":{}
+    "images":{
+        "test-id":"./images/mini_bot.jpeg"
+    }
 }
