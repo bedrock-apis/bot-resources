@@ -1,6 +1,8 @@
 {
     "type":"fqa",
     "files":[
+        "./scripting-fqa/starting_with_scripting.json",
+        "./scripting-fqa/scripting_run.json",
         "./scripting-fqa/scripting_test.json"
     ]
 }
