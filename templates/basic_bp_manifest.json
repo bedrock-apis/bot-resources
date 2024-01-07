@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "{{context.user-display-name}}'s Pack",
+        "description": "{{context.user-display-name}}'s Description - {{context.year}}",
+        "uuid": "{{new.uuid}}",
+        "version": "{{pack.stable}}",
+        "min_engine_version": "[[mc.stable.engine-complex]]"
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "{{new.uuid}}",
+            "version": [ 0, 1, 0 ]
+        }
+    ]
+}

@@ -11,6 +11,11 @@
             "name":"Behavior Pack Manifest - Experminetal Scripting",
             "description":"The **Behavior Pack Manifest** is a file that contains metadata about a behavior pack, such as its name, description, and version. It also specifies the files that make up the behavior pack, including the scripts that define the behavior of entities in Minecraft.\n\n**Experimental Scripting** is a feature that allows creators to write JavaScript code to modify the behavior of entities in Minecraft. The Script API is currently in active development, and breaking changes are frequent."
         },
+        "bp-manifest-basic":{
+            "file":"./basic_bp_manifest.json.json",
+            "name":"Behavior Pack Manifest - Basic",
+            "description":"The **Behavior Pack Manifest** is a file that contains metadata about a behavior pack, such as its name, description, and version. It also specifies the files that make up the behavior pack."
+        },
         "mit-license":{
             "file":"./MIT_LISENCE.txt",
             "name":"MIT LICENSE Template - {{context.year}}",

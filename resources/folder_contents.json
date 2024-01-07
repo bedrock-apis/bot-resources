@@ -1,6 +1,7 @@
 {
     "type":"resources",
     "images":{
-        "test-id":"./images/mini_bot.jpeg"
+        "test-id":"./images/mini_bot.jpeg",
+        "m-logo":"./images/m_logo.png"
     }
 }

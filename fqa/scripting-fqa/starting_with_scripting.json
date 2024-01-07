@@ -1,0 +1,10 @@
+{
+    "tags":[
+        "script-start",
+        "scripting",
+        "script-first",
+        "script-setup"
+    ],
+    "title": "Script Project Setup",
+    "body": "**Scripting** is really different from other topics, and it requires a JS and Programming knownladge. You can create complex game logic via APIs. APIs are used to interact with words and read its state, e.g: Entities, Blocks, Items.\r\n\r\n**Hello World** here is basic setup of your project:\r\n- **Generate manifest** Generate a `manifest.json` file with script modules and dependencies via `/template template-id:bp-manifest-scripts-stable` \r\n- **Create Source Files** in your pack create folder `scripts` and add `index.js`.\r\n- **Test** paste code below to the source file, and test your pack!\r\n```js\r\nimport { world } from \"@minecraft/server\";\r\n\r\nconsole.warn(\"Script Imported: Hello World!\");\r\n\r\nworld.afterEvent.playerSpawn.subscribe(e=>{\r\n    console.warn(e.player.name + \" spawned in your world!\");\r\n})\r\n```"
+}
