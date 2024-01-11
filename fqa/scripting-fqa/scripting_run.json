@@ -10,5 +10,5 @@
     ],
     "title": "System - Run Timeout",
     "body": "Using `system.runTimeout` and `system.runInterval` help as creating time based logic. Let's say i want to send a message every 5 secons.\r\n```js\r\nimport { system, world } from \"@minecraft/server\";\r\n\r\n// Executed every X ticks\r\nsystem.runInterval(()=>{\r\n    world.sendMessage(\"Message from API!\");\r\n}, 5 * 20);\r\n\r\n// Executed once\r\nsystem.runTimeout(()=>{\r\n    world.sendMessage(\"Once from API!\");\r\n}, 7 * 20);\r\n```",
-    "link": "https://docs.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server/system#runTimeout"
+    "link": "https://learn.microsoft.com/minecraft/creator/scriptapi/minecraft/server/system?view=minecraft-bedrock-stable#runtimeout"
 }
