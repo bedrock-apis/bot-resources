@@ -2,6 +2,7 @@
     "type":"resources",
     "images":{
         "test-id":"./images/mini_bot.jpeg",
-        "m-logo":"./images/m_logo.png"
+        "mojang-logo":"./images/m_logo.png",
+        "mc-logo-preview-400":"./images/Logo.scale-400.png"
     }
 }

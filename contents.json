@@ -1,5 +1,7 @@
 [
-    "./templates/folder_contents.json",
+    "./templates/mc_templates.json",
+    "./templates/other_templates.json",
+
     "./resources/folder_contents.json",
 
     "./fqa/folder_contents.json",
