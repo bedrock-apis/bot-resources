@@ -28,7 +28,7 @@
             "description":"Copy this image to root of you pack, and name it `pack_icon`.png"
         },
         "pack-icon-attachment":{
-            "source":"https://cdn.discordapp.com/attachments/965404512187740220/1195005831796764753/Logo.scale-400.png",
+            "source":"../resources/images/Logo.scale-400.png",
             "type":"attachment",
             "name":"Pack Icon",
             "description":"Copy this image to root of you pack, and name it `pack_icon`.png"
