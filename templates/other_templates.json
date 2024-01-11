@@ -2,7 +2,7 @@
     "type":"templates",
     "templates":{
         "mit-license":{
-            "source":"./MIT_LISENCE.txt",
+            "source":"./other/MIT_LISENCE.txt",
             "name":"MIT LICENSE Template - {{context.year}}",
             "description":"The MIT License is a permissive free software license that originated at the Massachusetts Institute of Technology (MIT) in the late 1980s. The license allows anyone to use, copy, modify, merge, publish, distribute, sublicense, and sell the software without any restrictions."
         }
