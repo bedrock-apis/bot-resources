@@ -3,6 +3,8 @@
     "files":[
         "./scripting-faq/starting_with_scripting.json",
         "./scripting-faq/scripting_run.json",
-        "./scripting-faq/scripting_test.json"
+        "./scripting-faq/scripting_test.json",
+
+        "./general/discord-invite.json"
     ]
 }
