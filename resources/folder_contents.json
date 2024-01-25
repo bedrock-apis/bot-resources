@@ -3,6 +3,6 @@
     "images":{
         "test-id":"./images/mini_bot.jpeg",
         "mojang-logo":"./images/m_logo.png",
-        "mc-logo-preview-400":"./images/Logo.scale-400.png"
+        "pack_icon":"./images/pack_icon.png"
     }
 }
