@@ -17,13 +17,13 @@
             "description":"The **Behavior Pack Manifest** is a file that contains metadata about a behavior pack, such as its name, description, and version. It also specifies the files that make up the behavior pack."
         },
         "pack-icon":{
-            "source":"mc-logo-preview-400",
+            "source":"pack_icon",
             "type":"image",
             "name":"Pack Icon",
             "description":"Copy this image to root of you pack, and name it `pack_icon`.png"
         },
         "pack-icon-attachment":{
-            "source":"../resources/images/Logo.scale-400.png",
+            "source":"../resources/images/pack_icon.png",
             "type":"attachment",
             "name":"Pack Icon",
             "description":"Copy this image to root of you pack, and name it `pack_icon`.png"
