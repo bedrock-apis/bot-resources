@@ -1,0 +1,11 @@
+{
+    "type":"templates",
+    "templates":{
+        "vec3-class":{
+            "source":"./scripts/vec3/vec3.js;./scripts/vec3/vec3.d.ts",
+            "type":"attachment",
+            "name":"Vec3 Class",
+            "description":"DESCRIPTION"
+        }
+    }
+}
