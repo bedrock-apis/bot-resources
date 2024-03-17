@@ -1,6 +1,7 @@
 [
     "./templates/mc_templates.json",
     "./templates/other_templates.json",
+    "./templates/scripts_templates.json",
 
     "./resources/folder_contents.json",
 
