@@ -4,8 +4,8 @@
         "vec3-class":{
             "source":"./scripts/vec3/vec3.js;./scripts/vec3/vec3.d.ts",
             "type":"attachment",
-            "name":"Vec3 Class",
-            "description":"DESCRIPTION"
+            "name":"Power of Vec3 Class",
+            "description":"A very useful and powerful tool for calculating vector operations, this is a class that simplifies everything. Here are basic examples ```js\nconst vec = Vec3(0,0,0);\nconst vec = new Vec3(0,0,0);\nconst vec = Vec3.from({x:0,y:0,z:0});\nconst vec = Vec3.from([0,0,0]);```\nChaining Example ```js\nconst vec = Vec3.form(player.location)\n.add(Vec3(0,5,0))\n.multiply(3)\n.add({x:0,y:-5,z:0});\n```"
         }
     }
 }
