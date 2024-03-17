@@ -26,36 +26,36 @@
 
     "module.server.version",
     "module.server.version.preview",
-    "module.server.version.experimental",
+    "module.server.version-experimental",
     "module.server.version.preview-experimental",
 
     "module.server-ui.version",
     "module.server-ui.version.preview",
-    "module.server-ui.version.experimental",
+    "module.server-ui.version-experimental",
     "module.server-ui.version.preview-experimental",
 
     "module.server-gametest.version",
     "module.server-gametest.version.preview",
-    "module.server-gametest.version.experimental",
+    "module.server-gametest.version-experimental",
     "module.server-gametest.version.preview-experimental",
 
     "module.server-admin.version",
     "module.server-admin.version.preview",
-    "module.server-admin.version.experimental",
+    "module.server-admin.version-experimental",
     "module.server-admin.version.preview-experimental",
 
     "module.server-net.version",
     "module.server-net.version.preview",
-    "module.server-net.version.experimental",
+    "module.server-net.version-experimental",
     "module.server-net.version.preview-experimental",
 
     "module.server-editor.version",
     "module.server-editor.version.preview",
-    "module.server-editor.version.experimental",
-    "module.server-editor.version.preview-experimental"
+    "module.server-editor.version-experimental",
+    "module.server-editor.version.preview-experimental",
     
-    //"module.server-editor-bindings.version",
-    //"module.server-editor-bindings.version.preview",
-    //"module.server-editor-bindings.version.experimental",
-    //"module.server-editor-bindings.version.preview-experimental"
+    "module.server-editor-bindings.version",
+    "module.server-editor-bindings.version.preview",
+    "module.server-editor-bindings.version-experimental",
+    "module.server-editor-bindings.version.preview-experimental"
 ]
