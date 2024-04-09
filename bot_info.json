@@ -1,0 +1,11 @@
+{
+    "type":"bot-info",
+    "1138527696310251681": {
+        "permission": "owner",
+        "allow-faq": true,
+        "faq-channels":{},
+        "faq-management": [
+            "1227333696743407760# FAQ Manager role"
+        ] 
+    }
+}

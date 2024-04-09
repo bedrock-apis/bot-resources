@@ -6,7 +6,7 @@
     "./resources/folder_contents.json",
 
     "./faq/folder_contents.json",
-    
+    "./bot_info.json",
     "./compiler/folder_contents.json",
     "./static_variables.json"
 ]
