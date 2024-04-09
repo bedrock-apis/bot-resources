@@ -18,13 +18,13 @@
     "capabilities": [ "script_eval" ],
     "dependencies": [
         {
+            // {{module.server.uuid}}
             "module_name": "{{module.server.name}}",
-            // "uuid":"{{module.server.uuid}}",
             "version": "{{module.server.version.preview}}"
         },
         {
+            // {{module.server-ui.uuid}}
             "module_name": "{{module.server-ui.name}}",
-            // "uuid":"{{module.server-ui.uuid}}",
             "version": "{{module.server-ui.version.preview}}"
         }
     ]
