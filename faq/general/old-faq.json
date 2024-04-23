@@ -1,0 +1,2796 @@
+[
+    {
+        "tags": [
+            "entity-inventory-name-unknown",
+            "unknown"
+        ],
+        "title": "\"Unknown\" in inventories",
+        "description": "You can make an entity with named inventory this way: \nSummon entity via command:\n`/summon furniture:fridge_upper_container tile.furniture:fridge_upper.name ~~~`\nthen put\n`tile.furniture:fridge_upper.name=Freezer` in the lang file",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "mcstructure",
+            "mcstructure-format"
+        ],
+        "title": ".mcstructure format",
+        "description": "https://wiki.bedrock.dev/nbt/mcstructure.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "dialogue",
+            "npc-dialogue",
+            "dialogue-command"
+        ],
+        "title": "/dialogue",
+        "description": "https://wiki.bedrock.dev/entities/npc-dialogs.html#top\nhttps://docs.microsoft.com/en-us/minecraft/creator/documents/npcdialogue",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "render-method",
+            "beta-blocks-render",
+            "blocks-material"
+        ],
+        "title": "1.16 blocks render methods",
+        "description": "Information about the four block render methods can be found here:\nhttps://wiki.bedrock.dev/blocks/block-materials.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "beta-items",
+            "1.16+-items",
+            "1.10-vs-1.16+-items"
+        ],
+        "title": "1.16+ Items",
+        "description": "Items have a totally new, and completely different format in `1.16.100` and higher. The largest difference between the two (outside of component differences) is that there is ***no longer any resourcepack item file***. \n\nBe sure to move *any and all components* from your resource file to your behaviour file. Do mind that certain ones are updated in their syntax, such as `render_offsets` (see `?render_offsets`) and `icon`, the latter seen in the following example:\n\n```json\n\"minecraft:icon\": {\n    \"texture\": \"jade_katana\"\n}```\n\nLearn about new items here: https://wiki.bedrock.dev/items/items-16.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "fix-1.19.40"
+        ],
+        "title": "1.19.40 script fix",
+        "description": "**1. manifest.json**\nget the latest manifest by ?script manifest in <#749802770957074502> \n\n**2. Imports**  *changed names of modules*\nfrom\n```js\nimport * as mc from \"mojang-minecraft\"\nimport * as ui from \"mojang-minecraft-ui\"\nimport * as ne from \"mojang-net\"\nimport * as sa from \"mojang-server-admin\"\nimport * as gt from \"mojang-gametest\"\u200a\n```\nto\n```js\nimport * as mc from \"@minecraft/server\"\nimport * as ui from \"@minecraft/server-ui\"\nimport * as ne from \"@minecraft/server-net\"\nimport * as sa from \"@minecraft/server-admin\"\nimport * as gt from \"@minecraft/server-gametest\"\u200a\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "fix-1.19.50"
+        ],
+        "title": "1.19.50 script fix",
+        "description": "**1. Player|Dimrnsion .runCommand()**\n\n~~```js\nfunction sayHi (player) {\n    let result = player.runCommand('say hi')\n}```~~\n```js\nasync function sayHi (player) {\n    let result = await player.runCommandAsync('say hi')\n}```\n\n**2. Clases**\n- BlockRaycastOptions\n- EntityEventOptions\n- ScoreboardObjectiveDisplayOptions\n\n~~```js\nlet options = new EntityEventOptions()\noptions.entities = []\n```~~\n```js\nlet options = {\n    entities: []\n}\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "3d-item",
+            "attatchable"
+        ],
+        "title": "3D Items",
+        "description": "Attachables are a system in resource packs to give items custom models and animations when held.\nhttps://wiki.bedrock.dev/items/attachables.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "java-creator-community",
+            "java-data-packs"
+        ],
+        "title": "<:bedrock:926164867524730900> We play Bedrock! <:bedrock:926164867524730900>",
+        "description": "This Discord server is for the Bedrock Edition of Minecraft. If you're searching for assistance with Java Edition data packs or mods we suggest joining this Discord server: https://discord.gg/moddedmc",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "blockbench"
+        ],
+        "title": "<:blockbench:887506738822131713> Blockbench: Geometry Editor",
+        "description": "`Blockbench` is an all-in-one 3D Editor and Animator for Minecraft, as well as other blocky applications.\n\n**Website**: https://blockbench.net/\n**Discord Invite**: https://discord.gg/blockbench",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "api-version"
+        ],
+        "title": "APIs Versions",
+        "description": "@**minecraft/server**\n```\n0.1.0\n> 1.19.30.x\n```\n```\n1.0.0-beta\n> 1.19.40.23 - 1.19.50.20\n```\n```\n1.0.0\n> 1.19.50.21\n``` + [Features](https://learn.microsoft.com/en-us/minecraft/creator/documents/update1.19.50)\n\n\n```\n1.1.0-beta\n> 1.19.50.21\n```\n\n@**minecraft/server-ui**\n```\n0.1.0\n> 1.19.30.x\n```\n```\n1.0.0-beta\n> 1.19.40.23 - 1.19.50.20\n```\n\n\n[See more here](https://github.com/JaylyDev/ScriptAPI/blob/main/docs/npm-packages/npm-packages.md)",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "d-addons",
+            "doc-addons"
+        ],
+        "title": "Addons Documentation",
+        "description": "https://bedrock.dev/docs/stable/Addons",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "aggregate-features"
+        ],
+        "title": "Aggregate Features",
+        "description": "Aggregate features successively place features from a given list at the input location. Aggregate features are typically used to build custom scenes comprised of many disparate features.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#aggregate-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "all-particles",
+            "particle-list"
+        ],
+        "title": "All Minecraft Bedrock Particles",
+        "description": "https://www.digminecraft.com/lists/particle_list_pe.php",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "sound-list",
+            "all-sounds"
+        ],
+        "title": "All sounds:",
+        "description": "https://wiki.bedrock.dev/documentation/sound-definitions.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "animated-item",
+            "animated-item-texture",
+            "flipbook-item"
+        ],
+        "title": "Animated Item Template",
+        "description": "https://discord.com/channels/523663022053392405/525079766580330506/887482173643427840\n(Use `?invite`)\n(Also don't talk in <#525079766580330506>!)",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "animation-controllers",
+            "ac"
+        ],
+        "title": "Animation Controllers",
+        "description": "Intro:\nhttps://wiki.bedrock.dev/animation-controllers/animation-controllers-intro.html\nRunning commands: https://wiki.bedrock.dev/animation-controllers/entity-commands.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "d-animations",
+            "doc-animations"
+        ],
+        "title": "Animations Documentation",
+        "description": "https://bedrock.dev/docs/stable/Animations",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "beards-and-shavers"
+        ],
+        "title": "Beards and Shavers",
+        "description": "Beards and shavers simultaneously provide a platform (beard) and a clearance (shaver) for a feature to generate.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#beards-and-shavers",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "bedrock-server",
+            "bds"
+        ],
+        "title": "Bedrock Dedicated Servers",
+        "description": "https://wiki.bedrock.dev/servers/server-software.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "script-api",
+            "gametest"
+        ],
+        "title": "Bedrock Script API",
+        "description": "**Intro to ScriptAPI**\nhttps://aka.ms/startwithmcscript\n\n**Intro to Tests**\nhttps://docs.microsoft.com/en-us/minecraft/creator/documents/gametestgettingstarted\n\n\n**Doc Index**\nhttps://docs.microsoft.com/en-us/minecraft/creator/scriptapi/\n\nCommunity Docs\nhttps://wiki.bedrock.dev/scripting/game-tests\n\nScript API examples\nhttps://github.com/JaylyDev/ScriptAPI\n\nQ&A:\nhttps://wiki.bedrock.dev/scripting/gametest-qna.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "bedrock.dev",
+            "docs",
+            "documentation"
+        ],
+        "title": "Bedrock.dev",
+        "description": "https://bedrock.dev/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "get-started",
+            "guide",
+            "beginners-guide"
+        ],
+        "title": "Beginners Guide to Add-Ons",
+        "description": "https://wiki.bedrock.dev/guide/introduction.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "bps",
+            "behavior-pack-structure"
+        ],
+        "title": "Behavior Pack File Structure",
+        "description": "The vanilla behavior pack folder contains various paths and files. You can see the full folder schema here:\nhttps://wiki.bedrock.dev/documentation/pack-structure.html",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "beta-blocks",
+            "intro-to-blocks",
+            "blocks-intro"
+        ],
+        "title": "Beta Blocks",
+        "description": "1.16.100.56 beta blocks come with many new components. Even events and permutations.\nIntro:\nhttps://wiki.bedrock.dev/blocks/blocks-intro.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "binary-search"
+        ],
+        "title": "Binary Search",
+        "description": "Take a look at these examples and this Wikipedia page:\n\nhttps://discord.com/channels/523663022053392405/525078985676161024/793248867658235926\nhttps://discord.com/channels/523663022053392405/525078985676161024/780501426454396928\nhttps://en.wikipedia.org/wiki/Binary_search_algorithm",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "biome-tags"
+        ],
+        "title": "Biome Tags",
+        "description": "https://wiki.bedrock.dev/world-generation/biome-tags.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "d-biomes",
+            "doc-biomes"
+        ],
+        "title": "Biomes Documentation",
+        "description": "Beginner's Guide:\nhttps://wiki.bedrock.dev/world-generation/world-generation-intro.html\nWiki explanation:\nhttps://wiki.bedrock.dev/world-generation/biomes.html\nRaw documentation:\nhttps://bedrock.dev/docs/stable/Biomes",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "block-geometry"
+        ],
+        "title": "Block Geometry",
+        "description": "By default, 1.16.100 Blocks must have all pivot points set to `0`. \n\nThis can be avoided by using Blockbench, and installing the plugin called `Bedrock Pivot Fix 2`. Simply go to `Filter > Fix Bedrock Pivots`.\n\nAlso ensure that the model is within an appropriate size.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "block-geometry-limit",
+            "block-geometry-broken",
+            "block-size-limit"
+        ],
+        "title": "Block Geometry Size Limitation",
+        "description": "Excerpt taken from the Custom Block Geometry release article:\n<https://www.minecraft.net/en-us/creator/article/custom-block-geometry-release>\n> 1. A custom block geometry\u2019s size may not exceed 1.875x1.875x1.875, or 30x30x30 pixels.\n> 2. The absolute bounds that a custom block geometry must remain within are 1.875 (or 30 pixels) from the origin, on each axis.\n> 3. At least one pixel on each axis must be contained within the base 1x1x1 (or 16x16x16 pixel) block.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "block-light-emission"
+        ],
+        "title": "Block Light Emission in 1.16.100+",
+        "description": "Block light levels are decided based on a number between 1 and 15. However, the value can only be between 0 and one. The values are as follows:\n```\n1=0.07\n2=0.14\n3=0.2\n4=0.27\n5=0.34\n6=0.4\n7=0.47\n8=0.54\n9=0.6\n10=0.67\n11=0.74\n12=0.8\n13=0.87\n14=0.94\n15=1.0```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "block-model-pivots",
+            "warning-bounds",
+            "geometry-warning"
+        ],
+        "title": "Block Model (pivot | geometry bounds)",
+        "description": "Block models default their pivots to `0, 0, 0`. If your block looks \"fine in blockbench\", but weird in game, then this is most likely the issue! \n\nTo preview your model in Blockbench the same way you'd see it in-game, use the pivot tool and drag your pivots to `0, 0, 0`.\nThis issue usually only affects rotated parts, so non rotated parts should have no issues, even without setting pivots to `0, 0, 0`.\n\nWhen working with blocks with large models, you might receive a warning like `[Blocks][warning]-geometry.<geo> contains [...] boxes outside the warning bounds of (-0.5, -0.5, -0.5) to (1.5, 1.5, 1.5)`. Do not panic! It is just warning you the model is unusually large, but everything will work fine anyways, so do not let this warning stop you.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "block-permutations"
+        ],
+        "title": "Block Permutations",
+        "description": "https://wiki.bedrock.dev/blocks/blocks-16.html#block-permutations",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "block-sounds"
+        ],
+        "title": "Block Sounds",
+        "description": "https://wiki.bedrock.dev/blocks/block-sounds.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "block-tag"
+        ],
+        "title": "Block Tags",
+        "description": "<https://wiki.bedrock.dev/blocks/block-tags.html>",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "blockshapes"
+        ],
+        "title": "BlockShapes",
+        "description": "Blockshapes are basically models of vanilla blocks. Note that they currently only work on vanilla blocks.\n\nhttps://wiki.bedrock.dev/blocks/block-shapes.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "blockception-experimental-toggles",
+            "vscode-addon-experimental-toggles"
+        ],
+        "title": "Blockception does not Document Experimental",
+        "description": "The plugin is built around the idea of supporting marketplace-ready content. Therefore, it avoids experimental/beta/undocumented features unless vanilla files have been seen implementing it.\n\nThis thought should avoid situations where everyone starts using features. Minecraft either then fixes it or removes it, which causes developers longer developing times or discarding content.\n\nIt also goes that supporting experimental increases the workload of maintaining schemas by a lot.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "broken-durability-repairing",
+            "durability-repairing"
+        ],
+        "title": "Broken durability repairing",
+        "description": "You can use `\"repair_amount\": \"context.other->query.remaining_durability + 0.05 * context.other->query.max_durability\"`\nto make your item repair correctly.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "bucket-of-crabs",
+            "hire-bedrock-developer",
+            "hire-addon-creator"
+        ],
+        "title": "Bucket of Crabs",
+        "description": "Find incredible people. Make beautiful things. A home for crafting your career in the Minecraft industry.\n\nhttps://www.bucketofcrabs.net/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "chat-detection",
+            "custom-commands"
+        ],
+        "title": "Can you detect chat?",
+        "description": "From bedrock 1.17.30 stable and upper we are now able to read/modify/cancel the in-game chat with Gametest-API so custom commands are possible!",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "can-you-edit-vanilla-items",
+            "no-editing-vanilla-items"
+        ],
+        "title": "Can you edit Vanilla Items/Blocks?",
+        "description": "Currently vanilla items and blocks are not data driven, so we cannot edit them yet. Some items may be able to be edited such as food items, but the vast majority aren't currently.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "can-i-edit-player.json",
+            "player.json"
+        ],
+        "title": "Can/Should we edit the player.json file?",
+        "description": "Generally no, you shouldn't. That file could be changed by other addons, and could overwrite yours. If something you need is based on that file, your addon will most likely break if it's overwritten. Only edit the file if it's for aesthetics or is absolutely necessary.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "watchdog-termination",
+            "canceling-watchdog-termination",
+            "script-cancel-watchdog-termination",
+            "script-watchdog-cancellation"
+        ],
+        "title": "Canceling Watchdog Termination",
+        "description": "**1. Required import**\n```js\nimport {system} from \"@minecraft/server\";\n```\n\n**2. Cancellation of Watchdog Termination**\n```js\nsystem.events.beforeWatchdogTerminate.subscribe(eventData=>eventData.cancel = true);\n```\n\n> Available in @minecraft/server module via module version 1.0.0-beta and above.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "cardinal-facing-blocks"
+        ],
+        "title": "Cardinal Facing Blocks",
+        "description": "https://discordapp.com/channels/523663022053392405/781996483599138857/785948748382863401",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "carver-features"
+        ],
+        "title": "Carver Features",
+        "description": "Carver features are special feature types for modifying vanilla cave generation. Little can currently be customized using carvers. Carvers only include the classic spaghetti caves and not ravines or structures.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#carver-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "1.8-vs-1.10",
+            "client-entity-format-version"
+        ],
+        "title": "Client Entity 1.8.0 vs. 1.10.0 Formats",
+        "description": "`1.10.0` animates from solely `scripts`, and may not have `animation_controllers` at all.\n\n`cow.v1.0.entity.json` - `1.10.0`\n```json\n{\n  \"animations\": {\n    \"setup\": \"animation.cow.setup.v1.0\",\n    \"walk\": \"animation.quadruped.walk\",\n    \"look_at_target\": \"animation.common.look_at_target\",\n    \"baby_transform\": \"animation.cow.baby_transform\"\n  },\n  \"scripts\": {\n    \"animate\": [\n      \"setup\",\n      { \"walk\": \"query.modified_move_speed\" },\n      \"look_at_target\",\n      { \"baby_transform\": \"query.is_baby\" }\n    ]\n  }\n}\n```\n`1.8.0` has animation controllers listed in `animation_controllers` that control all animations.\n\n`bat.entity.json` - `1.8.0`\n```json\n{\n  \"animations\": {\n    \"resting\": \"animation.bat.resting\",\n    \"flying\": \"animation.bat.flying\"\n  },\n  \"animation_controllers\": [\n    { \"move\": \"controller.animation.bat.move\" }\n  ]\n}```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "clone-data"
+        ],
+        "title": "Cloning Data",
+        "description": "Chests contents and more can be copied using Ctrl + Pick Block.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "components",
+            "component-groups",
+            "ccg"
+        ],
+        "title": "Components vs. Component Groups",
+        "description": "There are three main structures that make up the base of a behavior-pack entity file. This link will explain what each of them means, and how to use them:\n\nhttps://wiki.bedrock.dev/entities/entities-intro.html#component-groups",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "conditional-lists"
+        ],
+        "title": "Conditional Lists",
+        "description": "Conditional lists pick a single feature from a collection based on conditions; they are akin to \u201cif-else if\u201d blocks in programming languages. Once a condition has been evaluated as successful (as determined via success determination, the conditional list will select only that one feature for placement.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#conditional-lists",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "contribute-to-wiki",
+            "contribute"
+        ],
+        "title": "Contribute to wiki.bedrock.dev",
+        "description": "You can see how to contribute to the wiki here: https://wiki.bedrock.dev/contribute-how-to.html\nThe repository is here: https://github.com/Bedrock-OSS/bedrock-wiki\nThe organization discord is here: https://discord.gg/tRB6wxjSeX\nWiki task list: https://github.com/Bedrock-OSS/bedrock-wiki/projects/2",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "manifest-creating-app",
+            "create-manifest-website",
+            "manifest-creator"
+        ],
+        "title": "Create your Manifest",
+        "description": "Bedrock Manifest Generator\nhttps://bedrock-manifest.web.app/\n\nCodeGeek Manifest Generator (1.19 support)\nhttps://www.codegeek.tk/tools/manifest_generator",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "custom-armor",
+            "custom-armour"
+        ],
+        "title": "Creating Custom Armor:",
+        "description": "https://wiki.bedrock.dev/items/custom-armor.html\nhttps://www.youtube.com/watch?v=O8-GlQm-QeU",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "custom-weapon"
+        ],
+        "title": "Creating Custom Weapon:",
+        "description": "http://wiki.bedrock.dev/items/custom-weapon.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "custom-biomes"
+        ],
+        "title": "Custom Biomes",
+        "description": "Custom biomes are currently broken as of 1.18's release. Vanilla biomes can still be edited but not rearranged.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "d-blocks",
+            "doc-blocks"
+        ],
+        "title": "Custom Blocks",
+        "description": "Documentation\nhttps://bedrock.dev/docs/stable/Blocks\nTutorial\nhttps://wiki.bedrock.dev/blocks/blocks-intro.html\nVersion 1.16.100+ Blocks\nhttps://wiki.bedrock.dev/blocks/blocks-16.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "boat",
+            "custom-boat"
+        ],
+        "title": "Custom Boats",
+        "description": "https://wiki.bedrock.dev/entities/boat-entities.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "skybox",
+            "cubemap",
+            "custom-skybox",
+            "custom-cubemap"
+        ],
+        "title": "Custom Cubemaps",
+        "description": "You can create custom \"Cubemaps\" for the Overworld, that will be rendered in front of the Vanilla sky (Including the Sun. Moon, and Stars!)\n\nTo do so, locate or create the path `rp/textures/environment/overworld_cubemap`, and add 6 .png images that are at least 1040x1040 in size, using the image below to determine the names that are required for each face.\n\nYour images can be translucent.",
+        "image": "https://cdn.discordapp.com/attachments/749802770957074502/966429478672797696/unknown.png",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "death-animations",
+            "custom-death-animations"
+        ],
+        "title": "Custom Death Animations",
+        "description": "https://wiki.bedrock.dev/visuals/death-animations.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "custom-dimensions",
+            "dimensions"
+        ],
+        "title": "Custom Dimensions",
+        "description": "Custom Dimensions are not currently possible on bedrock edition. You may have seen them on java edition, but for now there is no bedrock support.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entities",
+            "custom-entities",
+            "entity",
+            "custom-entity",
+            "mobs",
+            "custom-mobs",
+            "mob",
+            "custom-mob"
+        ],
+        "title": "Custom Entities",
+        "description": "Documentation\nhttps://bedrock.dev/docs/stable/Entities\nTutorial\nhttps://wiki.bedrock.dev/entities/entities-intro.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "item",
+            "d-item",
+            "doc-item",
+            "custom-item"
+        ],
+        "title": "Custom Items",
+        "description": "Documentation\nhttps://bedrock.dev/docs/stable/Item\nTutorial\nhttps://wiki.bedrock.dev/items/items-intro.html\nVersion 1.16.100+ Items\nhttps://wiki.bedrock.dev/items/items-16.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "custom-skins",
+            "skin-packs",
+            "skin-addon"
+        ],
+        "title": "Custom Skin Packs",
+        "description": "https://wiki.bedrock.dev/visuals/custom-skin-packs.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "custom-wood-pack",
+            "custom-wood-example",
+            "custom-wood"
+        ],
+        "title": "Custom Wood Example Pack",
+        "description": "https://mcpedl.com/cherry-blossom-wood-1-addon/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "dms-are-bad",
+            "dms",
+            "unsolicited-dms"
+        ],
+        "title": "DMs are not ideal",
+        "description": "When you ask a question via DM, you are restricting the total number of people who can help you from all potential server members to just *one*. Asking in the public channels is the best way to get a good, community-sourced answer to your question, allowing other observers to give their input.\n\nWhile you are certainly welcome to DM with each other, please be aware it is against our rules to send unsolicited DMs requesting help.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "damage",
+            "damage-sources"
+        ],
+        "title": "Damage Sources",
+        "description": "List of Damage Sources for Entities. May also be used in blocks and items.\n```json\n[\n    \"all\",\n    \"anvil\",\n    \"attack\",\n    \"block_explosion\",\n    \"charging\",\n    \"contact\",\n    \"drowning\",\n    \"durability\",\n    \"entity_attack\",\n    \"entity_explosion\",\n    \"fall\",\n    \"falling_block\",\n    \"fatal\",\n    \"fire\",\n    \"fire_tick\",\n    \"fireworks\",\n    \"fly_into_wall\",\n    \"freezing\",\n    \"lava\",\n    \"lightning\",\n    \"magic\",\n    \"magma\",\n    \"none\",\n    \"override\",\n    \"piston\",\n    \"projectile\",\n    \"stalactite\",\n    \"stalagmite\",\n    \"starve\",\n    \"suffocation\",\n    \"suicide\",\n    \"temperature\",\n    \"thorns\",\n    \"void\",\n    \"wither\"\n]\n```\n\n**Note**: this can be outdated, use\nhttps://docs.microsoft.com/en-us/minecraft/creator/reference/content/entityreference/examples/filters/has_damage",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "data-driven",
+            "hardcoded",
+            "data-controlled"
+        ],
+        "title": "Data driven",
+        "description": "Data Driven (at least in the realm of MC), means that something can be \"controlled via the config files.\" The opposite of data driven is hardcoded\n\nEssentially if something is Data Driven, it can be controlled with addons. If something is Hardcoded, it cannot be edited with addons as it is part of the core game. Something becoming data driven means something that was hardcoded is now editable by addons.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "hurt-detection",
+            "hurt-entity",
+            "entity-hurts"
+        ],
+        "title": "Detect Entity Hurt",
+        "description": "A variable for detecting when the entity is hurt (set to 1) using \"is_hurt_color\" in the render controller, credits to ZarkmendZan. The color defaults to black, so must be set manually if this isn't desired. The variable is also constantly set as long as the hurt color is active.\n```json\n\"is_hurt_color\": {\n    \"a\": \"variable.hurt = 1; return <desired value for alpha channel>;\"\n}\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "detect-death-with-commands"
+        ],
+        "title": "Detecting Death with Commands",
+        "description": "Example: <https://github.com/Hatchibombotar/graves-addon/blob/main/Graves_BP/functions/graves/death_detection.mcfunction>",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "detecting-items-in-inventory"
+        ],
+        "title": "Detecting Items in Inventory",
+        "description": "It is possible to test for items in the inventory, but not without using command blocks, or gametests or `hasitem` argument.\n\n`query.get_equipped_item_name` is useful for testing for items in `main_hand`, `off_hand`, or `armor` slots, but it won't test the full inventory.\n\nIf you want to detect an item anywhere in the player inventory (for example if they pick up an item, or complete a trade), you will need to use command blocks. It is possible to `/clear` an item, to generate a redstone signal, without removing the item. To target a specific player, you will need some rotating scoreboard or tag to ensure a single player remains the target to run on.\n\nYou can check a page on wiki about `hasitem` argument here:\nhttps://wiki.bedrock.dev/commands/selectors.html#has-item",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "visual-studio-code-visual-studio-difference",
+            "vscode-visual-studio"
+        ],
+        "title": "Difference between VSCode and Visual Studio",
+        "description": "VSCode (Visual Studio Code) is not the same as Visual Studio. VSCode is an editor that supports almost any file type and programming language. Visual Studio on the other hand is a heavy dedicated IDE not well suited to many tasks. Make sure you are using VSCode for Addon development and not Visual Studio.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "disable-particles"
+        ],
+        "title": "Disable Particles",
+        "description": "https://wiki.bedrock.dev/visuals/disabling-particles.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "team-damage",
+            "disabling-team-damage"
+        ],
+        "title": "Disabling Team Damage",
+        "description": "https://wiki.bedrock.dev/entities/disabling-team-damage",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "discord-invite",
+            "oss-discord",
+            "oss",
+            "bedrock-addons-discord"
+        ],
+        "title": "Discord Servers",
+        "description": "**Bedrock Add-Ons** is a help & discussion community for Add-Ons. Here, you can discuss addons, get help, and share your creations. \n<:bedrock_addons:887447576247422987> https://discord.gg/pytC8zKHPn <:bedrock_addons:887447576247422987>\n\n**Bedrock OSS** (Bedrock Open Source Software) exists to discuss, support, and collaborate on Minecraft Bedrock projects, tooling, and documentation. The focus here is on programming, documentation, and other \"meta\" topics related to making addons. \n<:bedrock_oss:887481623627563058> https://discord.gg/XjV87YN <:bedrock_oss:887481623627563058>",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "ping",
+            "dm",
+            "random-ping",
+            "dont-ping-people"
+        ],
+        "title": "Do not ping /DM random people",
+        "description": "**Do not ping or DM random people for help or otherwise. **\nIf you DM a person looking for help, you won't be able to get an answer from people who might know more about your question. \n\nRandom pings are never good either <:dont_ping_lich:850305248622018570> ; \nno one is obligated to help you at random.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "marketplace-enabled"
+        ],
+        "title": "Does it work on Marketplace?",
+        "description": "Not allowed:\n- Anything beta\n- Anything experimental\n- Gametest\n- Shaders\n- Guns, drugs, violence, religion etc.\n\nWhats allowed?\nEverything that isn't shown above. Custom items for example are allowed, as long as you don't use the new experimental components.\n\nPretty much, if it works in a non-beta, non-experimental world, and it isn't using scripts or shaders, its good.\n\nWhy did I see a map using Experimental?\nSome maps get special permission from Microsoft to use Experimental. These are usually free, or intended specifically to show-off the new creator-features. You are unlikely to get the same permission.",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "addon-based-on-vanilla-resources"
+        ],
+        "title": "Don't make addons based on the Vanilla Resource download!",
+        "description": "It appears that you downloaded the vanilla resource/behavior pack, and are building your pack inside of it. This is bad practice for multiple overlapping reasons:\n\n1) It bloats pack size for anyone who downloads your addon.\n2) It negatively impacts performance in game.\n3) It makes it significantly more difficult to differentiate between what you added, and what is vanilla.\n\nYou should instead create a pack from scratch, by creating a blank folder, adding a `manifest.json`, and then slowly building up the required folders and files. If this is intimidating, you can reference the vanilla packs for folder structure and file-format inspiration.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "dummy-entities",
+            "dummy-entity"
+        ],
+        "title": "Dummy Entities",
+        "description": "Dummy entities are invisible entities which are used behind the scenes for game-play purposes.\nDummy entities are a very useful tool, and the document (linked below) covers some of the ways they are utilized, as well as showing how to set up the resource side of things.\nhttps://wiki.bedrock.dev/entities/dummy-entities.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "dummy-component",
+            "dummy-query"
+        ],
+        "title": "Dummy Queries / Dummy Components",
+        "description": "Dummy components are used to communicate between the entity file and animation. The dummy components themselves don't do anything, but once they are added they can be directly queried for. An example is adding the components minecraft:is_sheared and querying if the entity has this component with query.is_sheared. \n\nRead more: https://wiki.bedrock.dev/entities/dummy-components.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "mob-effect",
+            "status-effect",
+            "effect-list"
+        ],
+        "title": "Effect Name List",
+        "description": "```\n - speed\n - slowness\n - haste\n - mining_fatigue\n - strength\n - instant_health\n - instant_damage\n - jump_boost\n - nausea\n - regeneration\n - resistance\n - fire_resistance\n - water_breathing\n - invisibility\n - blindness\n - night_vision\n - hunger\n - weakness\n - poison\n - wither\n - health_boost\n - absorption\n - saturation\n - levitation\n - fatal_poison\n - slow_falling\n - conduit_power\n - bad_omen\n - village_hero\n - darkness\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "effects-in-animations",
+            "animation-effects",
+            "particles-in-animation",
+            "sounds-in-animation"
+        ],
+        "title": "Effects in Animations",
+        "description": "https://wiki.bedrock.dev/visuals/animation-effects.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "emoji"
+        ],
+        "title": "Emoji (symbols) in Minecraft",
+        "description": "https://wiki.bedrock.dev/documentation/emojis",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-attacks"
+        ],
+        "title": "Entity Attacks",
+        "description": "https://wiki.bedrock.dev/entities/entity-attack.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "priority-for-behaviors",
+            "behavior-priority",
+            "priority-orderings"
+        ],
+        "title": "Entity Behavior Priority",
+        "description": "Behaviors are components that make the entity do something. They are always in the form: `minecraft:behavior.*`.\n\nAll behaviors contain a `\"priority\"` field. This field is used to decide when/how often the behavior will run.\n\n\u26a0\ufe0f In general, the more important behaviors should be lower, like 0, or 1.\n\nWhen the entity is picking something to do, it searches all its behaviors from lowest priority to highest priority, and picks the first one that it can do. For this reason, you need to make important behaviors like `minecraft:behavior.nearest_attackable_target` lower than behaviors like `minecraft:behavior.look_at_player`. If the `look_at_player` is lower, it will always run this first when the player is close, and therefor will never move.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-commands"
+        ],
+        "title": "Entity Commands",
+        "description": "https://wiki.bedrock.dev/animation-controllers/entity-commands.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-events",
+            "events"
+        ],
+        "title": "Entity Events",
+        "description": "https://wiki.bedrock.dev/entities/entity-events.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-filters"
+        ],
+        "title": "Entity Filters",
+        "description": "https://bedrock.dev/docs/stable/Entities#Filters",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-holds-item"
+        ],
+        "title": "Entity Holds Item",
+        "description": "https://wiki.bedrock.dev/entities/entity-holds-item.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-movement"
+        ],
+        "title": "Entity Movement",
+        "description": "https://wiki.bedrock.dev/entities/entity-movement.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-permutations",
+            "entity-properties"
+        ],
+        "title": "Entity Properties & Permutations",
+        "description": "Entities can use properties to store independent values-\n`minecraft:variant` is no longer required!\nhttps://wiki.bedrock.dev/concepts/entity-properties",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "remove-shadows",
+            "entity-shadows"
+        ],
+        "title": "Entity Shadows",
+        "description": "There are quite a few ways to remove shadows from entities. This document will show a few of these methods.\n\nLink: https://wiki.bedrock.dev/visuals/remove-shadows.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-timers"
+        ],
+        "title": "Entity Timers",
+        "description": "https://wiki.bedrock.dev/entities/timers.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-troubleshooting",
+            "invisible-entity"
+        ],
+        "title": "Entity Troubleshooting",
+        "description": "Basics:\nhttps://wiki.bedrock.dev/guide/troubleshooting.html\nAdvanced:\nhttps://wiki.bedrock.dev/entities/troubleshooting-entities.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-visual",
+            "entity-visuals"
+        ],
+        "title": "Entity Visuals",
+        "description": "https://wiki.bedrock.dev/visuals/introduction.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "environment",
+            "environment-sensors"
+        ],
+        "title": "Environment Sensors",
+        "description": "environment sensors allow you to create triggers based on filters.\nVanilla Usage: https://wiki.bedrock.dev/entities/vanilla-usage-components.html#minecraft-environment-sensor\nBedrock.dev: https://bedrock.dev/docs/stable/Entities#minecraft:environment_sensor\nVideo Walkthrough: https://www.youtube.com/watch?v=fP4QP7ebI2Q",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "trycatch"
+        ],
+        "title": "Error Handling",
+        "description": "+ Enable Content log Ui in the creator settings.\n\n\n**Simple error checking**  (Sync Code)\n```js\ntry {\n    // your code here\n} catch ( error ) {\n    console.warn(  error, error.stack  )\n}\n```\n\n\nNormaly errors from async functions can not be checked by the above method\n\n**Async error checking**\n```js\nsome_async_function()\n  .catch( error => { \n    console.error( error, error.stack ) \n  });\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "json-quotes",
+            "backslash-json",
+            "backslashing",
+            "json-internal-quotes",
+            "internal-quotes",
+            "escaping",
+            "internal-quotes",
+            "escape-characters"
+        ],
+        "title": "Escaping Characters",
+        "description": "In json, a string is created: `\"like this\"`. As you can notice, the `\"` character is used to show the beginning and the end of the string.\n\nIf you want to write a string that includes quotes, you need to \"escape\" it, by using backslashes: `\"a json \\\"string\\\" with quotes\"`. In Minecraft, the backslash character will disappear before being outputted.\n\nExamples:\n```\"/execute @e[type=item,name=\\\"Rotten Flesh\\\"] ~~~ give @p stonebrick 1 0\"\n\"/tellraw @a {\\\"rawtext\\\":[{\\\"text\\\":\\\"Hello World!\\\"}]}\"```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "script-event-order"
+        ],
+        "title": "Events.* execution order",
+        "description": "**Hitting an entity**\n1 entityHit\n\n**Breaking a block**\n1 blockBreak\n2 entityHit\n\n**Placing / pushing a block**\n1 itemStartUseOn\n2 beforeItemUseOn\n3 itemUseOn\n4 blockPlace / buttonPush\n5 itemStopUseOn\n\n**Hitting a block**\n1 beforeItemUseOn\n2 itemUseOn\n\n**Using an item**\n1 beforeItemUse\n2 itemUse\n\n**Using an item projectile**\n1 beforeItemUse\n2 itemUse\n3 entityCreate\n\n**Using an item charge start**\n1 beforeItemUse\n2 itemUse\n3 itemStartCharge\n\n**Using an item charge release**\n1 itemReleaseCharge\n2 entityCreate\n3 itemStopCharge\n\n**Using an item charged**\n1 itemCompleteCharge\n2 itemStopCharge",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "example-render-offsets",
+            "render-offsets",
+            "ro"
+        ],
+        "title": "Example Render Offsets",
+        "description": "`\"minecraft:render_offsets\"` has two main parameters for the main hand and the off hand, each of which has two fields for the first-person and third-person views. These are defined by a position, a rotation, and a scale.\n```json\n\"minecraft:render_offsets\": {\n  \"main_hand\": {\n    \"first_person\": {\n      \"position\": [0, 0, 0],\n      \"rotation\": [0, 0, 0],\n      \"scale\": [0, 0, 0]\n    },\n    \"third_person\":{\n      \"position\": [0, 0, 0],\n      \"rotation\": [0, 0, 0],\n      \"scale\": [0, 0, 0]\n    }\n  },\n  \"off_hand\": {\n    \"first_person\": {\n      \"position\": [0, 0, 0],\n      \"rotation\": [0, 0, 0],\n      \"scale\": [0, 0, 0]\n    },\n    \"third_person\": {\n      \"position\": [0, 0, 0],\n      \"rotation\": [0, 0, 0],\n      \"scale\": [0, 0, 0]\n    }\n  }\n}\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "system.run"
+        ],
+        "title": "Example: System.run",
+        "description": "```js\nsystem.run( function runnable {\n  system.run( runnable )\n  \n  // your code here\n\n});\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "exp-toggle",
+            "experimental-toggles"
+        ],
+        "title": "Experimental Toggles",
+        "description": "https://docs.microsoft.com/en-us/minecraft/creator/documents/experimentalfeaturestoggle",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "fake-block",
+            "entity-block"
+        ],
+        "title": "Fake Blocks",
+        "description": "https://wiki.bedrock.dev/blocks/fake-blocks.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "feature-chance",
+            "iterations",
+            "scatter-chance",
+            "count"
+        ],
+        "title": "Feature Chances",
+        "description": "Scatter chance: chance that any chunk will attempt to generate *all* of the iterations of a feature\nIterations: number of times the game will attempt to place an instance of a feature if the scatter chance for that chunk succeeds\nCount (ore features only): number of a block attempted to be placed *per iteration (vein)*",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "frg"
+        ],
+        "title": "Feature Rule Generator",
+        "description": "The **Feature Rule Generator (FRG)**\nis a tool created by **MACHINE_BUILDER**,\nwhich allows for extremely fast development of\nstructure-based addons.\nThere is a Pro version, and a free version available:\nhttps://machine-builder.itch.io/frg-v2",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "feature-types",
+            "feature-type"
+        ],
+        "title": "Feature Types",
+        "description": "https://wiki.bedrock.dev/world-generation/feature-types.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "d-features",
+            "doc-features"
+        ],
+        "title": "Features Documentation",
+        "description": "https://bedrock.dev/docs/stable/Features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "features-sub-folders"
+        ],
+        "title": "Features With Sub-Folders",
+        "description": "You can use a python script (created by MACHINE_BUILDER) to allow for sub-folders when making features in your behaviour packs. For information, check the message linked:\nhttps://discord.com/channels/523663022053392405/568808625590763521/820896817097080834",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "file-extensions",
+            "files-that-open-minecraft"
+        ],
+        "title": "Files that open Minecraft",
+        "description": "`.mcshortcut` Launch Minecraft and load world\n`.mcpack` Launch Minecraft and import resource/behaviour pack\n`.mcworld` Launch Minecraft and import world\n`.mcaddon` Launch Minecraft and import addon\n`.mctemplate` Launch Minecraft and import world template\n\nYou can find this list inside\n`C:\\Program Files\\WindowsApps\\Microsoft.MinecraftUWP_<>\\AppxManifest.xml`",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "finding-a-team",
+            "looking-for-work",
+            "finding-a-dev"
+        ],
+        "title": "Finding a Team or Dev",
+        "description": "This discord isn't suited for finding or offering paid work. We can't moderate these transactions, so we ask that you move to a more suitable place.\n\nFor a casual discord community, consider joining Skill Share: https://discord.gg/sZ7fkcN. \n\nFor more long-term contracts, consider visiting Bucket of Crabs: https://www.bucketofcrabs.net/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "faq",
+            "search"
+        ],
+        "title": "Finding with Faqbot",
+        "description": "Use `!search` in a bot channel to search for faqs",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "flipbook-textures",
+            "flipbook"
+        ],
+        "title": "Flipbook Textures",
+        "description": "https://wiki.bedrock.dev/blocks/flipbook-textures.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "flying-entities"
+        ],
+        "title": "Flying Entities",
+        "description": "https://wiki.bedrock.dev/entities/flying-entities.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "fog"
+        ],
+        "title": "Fog IDs",
+        "description": "https://wiki.bedrock.dev/documentation/fog-ids",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "custom-fog",
+            "fog-documentation"
+        ],
+        "title": "Fogs Documentation",
+        "description": "https://bedrock.dev/docs/stable/Fogs",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "format",
+            "code"
+        ],
+        "title": "Formatting JSON, JS",
+        "description": "Please format your code as code-blocks! This makes the text monospaced, and has support for syntax highlighting.\n\nThe format looks like this:\n\n**for JSON**\n\\`\\`\\`json\n{\n    \"example\": 123\n}\n\\`\\`\\`\n\n**for JavaScript**\n\\`\\`\\`js\nconsole.log(\"hello world\", 123)\u200a\n\\`\\`\\`\n\nThe character used here is the **backtick** (U+0060 \\` `GRAVE ACCENT`). This symbol is usually at the top left of your keyboard, occupying the tilde key (~). On mobile, it will be on the second or third page of symbols.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "crediting-template",
+            "author-crediting-template",
+            "creative-commons-template"
+        ],
+        "title": "Free Template for Terms of Usage",
+        "description": "**__Usage Conditions__**\n\n**You are permitted to:**\n\n- Examine the code and works to learn more about the creation and development of add-ons.\n- Change the code or works to suit your needs.\n- Use the add-on packs as you see fit in-game.\n- Re-distribute the add-on packs or works elsewhere, with approval of the author.\n\n**You are NOT permitted to:**\n\n- Negate the accreditation of the original author.\n- Paste the direct download link, negating the MCPEDL page.\n- Take the author's code, works, and textures just to republish them as your own.\n\n[PROJECT NAME] is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License by [AUTHOR NAME].\nPermissions that extend beyond the scope of this license may be obtained from [AUTHOR LINK/SOCIALS]. \n\n*Note - You can modify this however you want to fit your needs. Good luck on publishing your add-on!*",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "free-work"
+        ],
+        "title": "Free Work",
+        "description": "If you want an addon made for you for free, you're most likely out of luck. The best thing you can do is watch tutorials and read guides so you can learn how to develop it yourself.\n\nPeople won't work for free, but you can always offer to pay them to make something for you.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "gametest-q&a"
+        ],
+        "title": "GameTest Q&A 2021/08/06",
+        "description": "https://wiki.bedrock.dev/scripting/gametest-qna.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "geode-features"
+        ],
+        "title": "Geode Features",
+        "description": "Geode features construct spherical structures comprised of multiple block layers; they allow placement of sub-features along walls of the interior.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#geode-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "json-ui-intro"
+        ],
+        "title": "Get started with JSON UI",
+        "description": "https://wiki.bedrock.dev/json-ui/json-ui-intro.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "getting-partnered-on-marketplace"
+        ],
+        "title": "Getting Partnered!",
+        "description": "Getting partnered with marketplace is a _privilege_ not a _right_. There is no guarantee that your application will be accepted, especially if you don't have a strong portfolio. Even if you _are_ accepted, you should be prepared to wait for at _least_ a few months, and realistically you may never be accepted.\n\n**How to build a portfolio:**\n - Release maps on MCPEDL\n - Release maps through a publisher\n - Have a meaningful, well organized, public image\n - Register as an actual company",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-glowing-texture",
+            "spider-eyes",
+            "enderman-eyes",
+            "glowing-eyes",
+            "glowing-entity"
+        ],
+        "title": "Glowing Entity Textures:",
+        "description": "https://wiki.bedrock.dev/visuals/glowing-texture.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "growing-plant-features"
+        ],
+        "title": "Growing Plant Features",
+        "description": "Growing plant features place columns of body blocks with a head block at the end. Both can be randomized per-block for fine-tuned customization.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#growing-plant-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "help"
+        ],
+        "title": "Help",
+        "description": "For more information, use this command: !help\n\nPlease move into <#749802770957074502> to avoid spam!",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "faq-picture-mode"
+        ],
+        "title": "Hey, did you know that the Faqbot can use pictures now?",
+        "description": "Well you can \ud83e\uddd1\u200d\ud83c\udf73 \n\nThanks MJ!",
+        "image": "https://cdn.discordapp.com/attachments/747465277179953164/935083510744612874/pretty_scenery_anime_style_by_michmitchou_ddpfe3x-fullview.png",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "good-question",
+            "question",
+            "question-detail",
+            "question-details"
+        ],
+        "title": "How to ask a good question!",
+        "description": "Be specific and include relevant details about the question upfront.\n\u2022 What are you trying to accomplish?\n\u2022 If you have code, which part is not working?\n\u2022 What have you already tried?\n\u2022 Have you searched the Bedrock Wiki?",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "how-to-clear-specific-effect",
+            "clear-potion-effect"
+        ],
+        "title": "How to clear only one effect",
+        "description": "If you want to remove only one effect from player, give him this effect for `0` seconds.\nExample:\n`/effect @p night_vision 0` will clear night vision effect.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "apk",
+            "getting-extra-vanilla-jsons",
+            "most-of-all-vanilla-jsons"
+        ],
+        "title": "How to get more vanilla files?",
+        "description": "Download minecraft.apk version that you need, rename it to .zip and extract. Then go to `assets` folder. Here you will find vanilla resource, behaviour packs and more.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "block-shadow",
+            "dark-block",
+            "block-is-dark"
+        ],
+        "title": "How to remove block shadow",
+        "description": "There are three main reasons a block may have a shadow.\n\nThe first thing to add to prevent a shadow is the `minecraft:material_instances` component with face dimming and ambient occlusion turned off:\n```json\n\"material_instances\": {\n    \"*\": {\n        ...,\n        \"face_dimming\": false,\n        \"ambient_occlusion\": false\n    }\n}\n```\nThe second is to set the `minecraft:light_dampening` component to allow all light to pass through:\n\n```json\n\"minecraft:light_dampening\": 0\n```\nThe last thing to do\u2014if at this point there is still somehow a shadow\u2014is to ensure your block geometry does not clip into the ground, if you are using one. No element should go below y=0.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "too-much-hearts",
+            "hearts-in-hud"
+        ],
+        "title": "How to remove hordes of hearts from hud",
+        "description": "https://youtu.be/Zwz9NJaPNQQ",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "teleporting-to-nether",
+            "teleporting-to-another-dimension",
+            "changing-dimensions",
+            "tp-dimensions"
+        ],
+        "title": "How to teleport into another dimensions?",
+        "description": "If you have a loaded entity in the nether  (or another dimension) you can teleport to it, by using the entity selector as a coordinate. Example: `teleport @s @e[family=nether_waypoint]`\n\nThis is the only way to move from one dimension to another, other than using portals.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "query.is_item_name_any",
+            "multiplayer-query-incompatible"
+        ],
+        "title": "Incompatible Multiplayer Queries",
+        "description": "Some of the queries are incompatible in multiplayer. Known ones:\n1. `query.is_item_name_any`  Use `query.get_equipped_item_name` instead.\n\nIf you found any others, ping a person with faq-management role.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "incompatible"
+        ],
+        "title": "Incompatible Popup",
+        "description": "This popup is caused by the `dependencies` key within your pack's manifest. To solve the problem, either remove it entirely, or set your pack's `min_engine_version` to `1, 17, 0` and the `format_version` to `2`.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "how-to-install-bridge",
+            "installing-bridge",
+            "bridge-v2"
+        ],
+        "title": "Installing bridge. v2",
+        "description": "bridge. v2 is a PWA, which is a new and emerging type of application. \n\n**To install:**\n- Visit the editor at https://editor.bridge-core.app on a supported browser (Chrome or Chromium based Edge).\n- Click the \"Install as Application\" button in the URL bar. You can also proceed through setup and create your first project and then click the \"Install App\" button in the sidebar.\n- As of bridge. v2.0.1, you will now see an option to install the app as the first step of the setup process, to install from this, simply click \"Install App\".\n\n**To convert your bridge. v1 projects to bridge. v2:**\n- Update to bridge. 1.8 (bottom menu bar)\n- Run the bridge 2.0 project-converter. \n\n**Is it really an application?**\nMany apps these days are built using web technologies, including apps like Discord and VS Code, bridge. v2 is the same. \n\n**Once installed, you can:**\n- Launch it without internet\n- Launch it from the start menu\n- Create a shortcut for it on your desktop \n\n**Getting started with bridge. v2:**\nhttps://bridge-core.app/editor-docs/getting-started/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "entity-tutorial",
+            "entity-intro",
+            "mob-intro",
+            "mob-tutorial"
+        ],
+        "title": "Intro to Entities",
+        "description": "https://wiki.bedrock.dev/entities/entities-intro.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "invite-faq-bot"
+        ],
+        "title": "Invite the faq bot!",
+        "description": "You can invite the faq-bot to your server. You will be able to access existing faqs. You will not have permission to edit, delete, or create new faqs.\n\nhttps://discord.com/api/oauth2/authorize?client_id=739408001399521350&permissions=75840&scope=bot",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "invulnerable-entities",
+            "invincible-entities"
+        ],
+        "title": "Invulnerable Entities",
+        "description": "https://wiki.bedrock.dev/entities/invulnerable-entities.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "animate-blocks",
+            "block-animation"
+        ],
+        "title": "Is it possible to animate Blocks?",
+        "description": "You may not animate blocks in the same way as entities, with keyframes or math.\nYou *can*, however, animate the model or texture frame by frame; the model can be animated by sequentially hiding/showing new parts of the model.\nTexture-wise, you may use block flipbook textures.\n\nhttps://wiki.bedrock.dev/blocks/blocks-intro.html#block-flipbook-texture-definition\n\nhttps://wiki.bedrock.dev/concepts/flipbook-textures.html",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "creative-category-overflow",
+            "category-bug",
+            "item-overflow"
+        ],
+        "title": "Item Creative Category Overflow",
+        "description": "Item categories have an interesting bit about them that may seem broken, but is easily avoidable. \nItems may not be assigned to a specific creative category without a special component, **in tandem**. *Some* of them will work, but others will begin to go into other categories after a certain amount registered.\n\nTo lock them to one category, using the `\"category\"` description property, one must also use the `creative_category` component to avoid overflow. These should \"match\".\n\nExample:\n```json\n{\n    \"format_version\": \"1.16.100\",\n    \"minecraft:item\": {\n        \"description\": {\n            \"identifier\": \"yanasakana:kyanite_axe\",\n            \"category\": \"Equipment\" \n        },\n        \"components\": {\n            \"minecraft:creative_category\": {\n                \"parent\": \"itemGroup.name.axe\" // Matches Equipment, because it is in that tab\n            },\n             ...\n        },\n        \"events\": { ... }\n    }\n}\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "item-name",
+            "item-translation"
+        ],
+        "title": "Item Translation Keys in 1.16.100+",
+        "description": "The translation key for all custom items is updated as of versions `1.16.100`+.\n\n[ Old ]\n`item.trhh:mysterious_sack.name=Mysterious Sack`\n\n[ New ]\n`item.trhh:mysterious_sack=Mysterious Sack`\n\nRemove `.name` to update.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "json-comments-in-vscode",
+            "json-comments",
+            "comments"
+        ],
+        "title": "JSON Comments in VSCode",
+        "description": "If you don't want your comments be counted as errors, you can do the following trick:\n1. Press `F1` then type: `Preferences: Open Settings (JSON)` and enter\n2. Type:\n```json\n\"files.associations\": {\n    \"*.json\": \"jsonc\"\n}\n```\n\nThis will automatically open json files as JSONC, so you no longer get error messages for comments.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "json-ui-is-tough",
+            "spoon-feed-json-ui"
+        ],
+        "title": "JSON UI is tough!",
+        "description": "Welcome to JSON UI! \n\nIf you are reading this, there is a good chance that you were inspired by The Hive, Galaxite, or some other addon or server. Welcome! This is the right place to learn about these topics. \n\nTo get started in learning JSON UI, we recommend you check out the Wiki first: https://wiki.bedrock.dev/json-ui/json-ui-intro.html.\n\nHowever, please be aware of these things:\n - JSON UI is much tougher than other addon topics.\n - JSON UI is 100% only documented from vanilla reference and reverse engineering. There are no documentation directly from Mojang. \n - We will not give you step-by-step instructions on how to create UI from Hive/Galaxite. \n\n**JSON UI is one of the toughest addon topics, so please be patient. Try and attempt small tasks. Ask concrete, answerable questions. We won't spoon-feed you.**",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "json-ui-vs-scripting-ui"
+        ],
+        "title": "JSON UI vs. HTML UI",
+        "description": "Json UI is created using json config files. It is used to edit *vanilla* UI. The current UI for the game is built using the json UI engine. \n\nScripting UI, or html UI, is a new, experimental kind of UI that uses HTML and the js scripting engine. Its pretty much completely undocumented, and not considered particularly stable.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "json-is-not-a-language"
+        ],
+        "title": "JSON is not a language... or is it?",
+        "description": "`json` is not a language, its a data exchange format, not unlike UFT8 or whatever. \n\nThe behavior pack system in Minecraft, is, however, touring complete. Since the behavior pack system uses`json` as its syntax, `json` BECOMES a programming language in the context of Minecraft.\n\nA language is just a fancy way of saying \"A syntax, which either through interpretation or compilation results a valid program\".\n\nWhile it may be passively correct to claim that \"json isn't a programming language\", its pretty missleading when discussing Minecraft Bedrock content.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "pretify"
+        ],
+        "title": "JavaScript Formating",
+        "description": "```\n```js\nlet a = 10\nconsole.warn(a)\n``\u200e`\n```\nResult:\n```js\nlet a = 10\nconsole.warn(a)\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "javascript-obfuscator",
+            "js-obfuscator",
+            "script-obfuscator"
+        ],
+        "title": "JavaScript Obfuscator",
+        "description": "Simple online tool to obfuscate your javascript code at [obfuscator.io](https://obfuscator.io/)",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "json-lint"
+        ],
+        "title": "Json Lint",
+        "description": "Linting is the ability to validate code as correct, or incorrect. JsonLinter is a website that will point out json-formatting issues like mismatches curly braces for you. \n\n**Link:** https://jsonlint.com/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "json-ui-docs",
+            "doc-json-ui",
+            "json-ui-documentation"
+        ],
+        "title": "Json UI Documentation",
+        "description": "You can learn more and get started with JSON UI here:  https://wiki.bedrock.dev/json-ui/json-ui-intro.html.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "justask",
+            "dontasktoask",
+            "data"
+        ],
+        "title": "Just ask!",
+        "description": "https://dontasktoask.com/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "js",
+            "javascript"
+        ],
+        "title": "Learn Javascript!",
+        "description": "As the Script API is a framework built on JavaScript code, having an understanding of JavaScript is key.\n\nIf you are being shown this, then you most likely are a beginner with JS and could use a little guidance. \n\n\ud83d\udcfa **Videos on Learning JavaScript**\n[Javascript in 1 hour](https://youtu.be/W6NZfCO5SIk)\n[Javascript Classes in 1 hour](https://youtu.be/PFmuCDHHpwk)\n\n**Web Guide:**\n<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide>\n\n**Reference Sites:**\n<https://www.w3schools.com/jsref/default.asp>\n<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>\n<https://javascript.info>",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "lead",
+            "leash-position",
+            "leash"
+        ],
+        "title": "Leash Position",
+        "description": "https://wiki.bedrock.dev/visuals/leash-position.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "old-wiki",
+            "legacy-wiki"
+        ],
+        "title": "Legacy Wiki",
+        "description": "https://old-wiki.bedrock.dev",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "creative-categories"
+        ],
+        "title": "List of Creative Categories",
+        "description": "https://wiki.bedrock.dev/documentation/creative-categories.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "loot-tables"
+        ],
+        "title": "Loot Tables",
+        "description": "https://wiki.bedrock.dev/loot/loot-tables.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "materials"
+        ],
+        "title": "Materials",
+        "description": "Explanation:\nhttps://wiki.bedrock.dev/visuals/materials.html\nList of materials:\nhttps://wiki.bedrock.dev/documentation/materials.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "math-animations"
+        ],
+        "title": "Math-based Animations",
+        "description": "Math animations are a powerful alternative to key-frame animations. Generally speaking, math based animations is the concept of using Molang expressions and maths to animate entity geometry.\n\nLearn more: https://wiki.bedrock.dev/visuals/math-based-animations.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "ms-docs",
+            "microsoft-docs"
+        ],
+        "title": "Microsoft Documentation",
+        "description": "https://docs.microsoft.com/en-us/minecraft/creator/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "color-codes"
+        ],
+        "title": "Minecraft Color Codes",
+        "description": "<https://minecraft.fandom.com/wiki/Formatting_codes>\n\nNote that Strikethrough and Underline currently do not work: \n<https://bugs.mojang.com/browse/MCPE-41729>\n\n`\u00a70`  Black\n`\u00a71`  Dark Blue\n`\u00a72`  Dark Green\n`\u00a73`  Dark Aqua\n`\u00a74`  Dark Red\n`\u00a75`  Dark Purple\n`\u00a76`  Gold\n`\u00a77`  Gray\n`\u00a78`  Dark Gray\n`\u00a79`  Blue\n`\u00a7a`  Green\n`\u00a7b`  Aqua\n`\u00a7c`  Red\n`\u00a7d`  Light Purple\n`\u00a7e`  Yellow\n`\u00a7f`  White\n`\u00a7g`  Minecoin Gold\n\n`\u00a7k`  Obfuscated\n`\u00a7l`  Bold\n`\u00a7o`  Italic\n`\u00a7r`  Reset formatting",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "minecraft-commands-discord",
+            "minecraft-commands",
+            "mcc",
+            "mcc-commands",
+            "advanced-command-help",
+            "command-help"
+        ],
+        "title": "Minecraft Commands Discord Server",
+        "description": "**Minecraft Commands** is a community focused around commands, command blocks, data-packs, and add-ons in vanilla Minecraft; to share, to question, to discuss, and more!\n<https://discord.gg/QAFXFtZ>",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "java-vanilla-pack",
+            "je-vp"
+        ],
+        "title": "Minecraft Java Edition Vanilla Pack",
+        "description": "https://mcasset.cloud/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "ios-preview",
+            "ios-beta",
+            "iphone-preview",
+            "iphone-beta",
+            "ios-snapshot",
+            "iphone-beta"
+        ],
+        "title": "Minecraft Preview",
+        "description": "The Minecraft Preview is where you can try out in-development features.\n\nFor Windows 10/11 users, follow this link to open the store page for the Preview. If you already own Minecraft, you should be able to install this for free: https://aka.ms/PreviewWindowsFix\n\nFor iOS users, follow this link to see if any beta testing slots are open. If there are no open slots, try coming back another time: https://testflight.apple.com/join/qC1ZnReJ",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "molang",
+            "temp",
+            "context",
+            "variable"
+        ],
+        "title": "Molang Documentation",
+        "description": "https://bedrock.dev/docs/stable/Molang",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "molang-playground"
+        ],
+        "title": "Molang Playground",
+        "description": "https://bridge-core.github.io/molang-playground/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "query",
+            "queries",
+            "query-list",
+            "q-list",
+            "q"
+        ],
+        "title": "Molang Queries",
+        "description": "Full list of queries: https://bedrock.dev/docs/stable/Molang#List%20of%20Entity%20Queries\n\nBetter explanation for some queries: https://wiki.bedrock.dev/documentation/queries",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "multiface-features"
+        ],
+        "title": "Multiface Features",
+        "description": "Multiface features randomly place sequences of blocks on surfaces based on the success of the previous element of the sequence.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#multiface-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "black-entities",
+            "my-entity-is-black",
+            "entity-in-block"
+        ],
+        "title": "My Entity is Black",
+        "description": "If your entity is black (if it is in block) and you don't want it to be so, you can add `\"ignore_lighting\" : true` to its render controller.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "nbt-commands"
+        ],
+        "title": "NBT Commands",
+        "description": "https://wiki.bedrock.dev/commands/nbt-commands.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "nbt-studio",
+            "nbt-editor",
+            "app-for-adding-loot-into-chests"
+        ],
+        "title": "NBT Studio",
+        "description": "https://github.com/tryashtar/nbt-studio/releases",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "namespaces"
+        ],
+        "title": "Namespaces",
+        "description": "https://wiki.bedrock.dev/concepts/namespaces",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "new-execute-errors",
+            "execute-error"
+        ],
+        "title": "New `/execute` Pack Errors",
+        "description": "If you are wanting to use the new `/execute` syntax but are receiving errors such as \"Unexpected '@e' in 'execute as >>@e<<\", then make sure your manifest's \"min_engine_version\" is at least 1.19.50.\n```json\n{\n  \"format_version\": 2,\n  \"header\": {\n    \"name\": \"pack.name\",\n    \"description\": \"pack.description\",\n    \"uuid\": \"01234567-89ab-cdef-0123-456789abcdef\",\n    \"min_engine_version\": [1, 19, 50],\n    \"version\": [1, 0, 0]\n  }\n}\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "no-capitals",
+            "no-capital-letters"
+        ],
+        "title": "No capital letters please!",
+        "description": "Do not use ANY capital letters in your addon. Capital letters are *not supported by the addon system*. Don't use capitals in your identifiers, animation controller states, folders, file names, functions, tags, events, component_groups, or anywhere else.\n\nYes, SOME places can support capitals, but that's not an excuse to use them. This makes a confusing mess of remembering where its allowed and where it isn't. \n\nNo capitals \ud83d\udca2",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "optimizing-addons",
+            "lag-and-performance",
+            "addon-performance"
+        ],
+        "title": "Optimizing Addons",
+        "description": "https://wiki.bedrock.dev/meta/addon-performance.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "ore-features",
+            "ore"
+        ],
+        "title": "Ore Features",
+        "description": "Ore features place clusters of blocks around a target position. The blocks placed by ore features vary via replacement rules. Only the block count in ore features is global, controlled by the \"count\" property.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#ore-features\n\nTutorial: https://wiki.bedrock.dev/world-generation/custom-ores.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "particles",
+            "emitter"
+        ],
+        "title": "Particles Documentation",
+        "description": "https://bedrock.dev/docs/stable/Particles",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "parts-of-custom-tree",
+            "decaying-leaves"
+        ],
+        "title": "Parts of Custom Tree",
+        "description": "https://wiki.bedrock.dev/blocks/parts-of-custom-tree.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "pathfinding"
+        ],
+        "title": "Pathfinding",
+        "description": "https://wiki.bedrock.dev/entities/entity-movement.html#pathfinding",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "perfect-json"
+        ],
+        "title": "Perfect json",
+        "description": "You can format your json for easier readability & a nicer look here:\nhttps://jsonformatter.curiousconcept.com/#",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "placement-passes",
+            "passes",
+            "feature-passes",
+            "feature-placement"
+        ],
+        "title": "Placement Passes",
+        "description": "Placement passes can just be thought of as a named ordering for when placement of a feature rule\u2019s target feature should occur. *Nothing special occurs during a pass; it\u2019s just a name.*\n\nThe available passes are:\n\n- `pregeneration_pass`\n- `first_pass`\n- `before_underground_pass`\n- `underground_pass`\n- `after_underground_pass`\n- `before_surface_pass`\n- `surface_pass`\n- `after_surface_pass`\n- `before_sky_pass`\n- `sky_pass`\n- `after_sky_pass`\n- `final_pass`\n\nNote that the pregeneration pass is reserved for carver features.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "player-geometry",
+            "human-geometry"
+        ],
+        "title": "Player Geometry",
+        "description": "https://wiki.bedrock.dev/visuals/player-geometry.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "no-rar",
+            "use-zip"
+        ],
+        "title": "Please don't use .rar!",
+        "description": "`.rar` is a proprietary format from the paid WinRar program. When you send a `.rar` file, you are requiring the other person to either pay for WinRar, or illegally use it. \n\nPlease use the universal `.zip` format in the future. You can do so from WinRar, but I recommend windows default, or 7Zip.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "no-screenshots",
+            "no-photos",
+            "screenshits"
+        ],
+        "title": "Please, no screenshots or photos!",
+        "description": "Screenshots are hard to read, and photos even more so. This is especially true if you are using bridge or another tree editor, as this format obscures the JSON format.\n\nWe can help you best if you copy and paste your code here, or send it directly as a file.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "projectiles"
+        ],
+        "title": "Projectiles",
+        "description": "https://wiki.bedrock.dev/documentation/projectiles",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "script-async",
+            "script-promises",
+            "promise",
+            "async",
+            "js-async",
+            "js-promises",
+            "javascript-async",
+            "asynchronios",
+            "asynchronous-functions",
+            "asynchronous-javascript",
+            "asynchronous-js",
+            "javasript-promise",
+            "async-function"
+        ],
+        "title": "Promise (Async / Await)",
+        "description": "Asynchronous programming is a very useful and powerful thing when processing data in the course of something happening, it can be a function that does not slow down the ticks of minecraft, and run all the time.\n\n\n**About Promises**\n+ [Promise - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)\n+ [Promise - The Modern JavaScript Tutorial](https://javascript.info/promise-basics)\n+ [Promises - W3Schools](https://www.w3schools.com/js/js_promise.asp)\n\n\n**Using async/await**\n+ [Async function - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)\n+ [Async/await - The Modern JavaScript Tutorial](https://javascript.info/async-await)\n+ [JavaScript Async - W3Schools](https://www.w3schools.com/js/js_async.asp)",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "query-for-armour",
+            "query-for-armor"
+        ],
+        "title": "Query for Armor Values!",
+        "description": "https://discordapp.com/channels/523663022053392405/525070320852402197/739219195501477898",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "rtx",
+            "rtx-texturing"
+        ],
+        "title": "RTX Texturing Guide <:rtx_on:887556585273065482>",
+        "description": "https://www.nvidia.com/en-us/geforce/guides/minecraft-rtx-texturing-guide/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "randomised-structure-loot",
+            "how-to-add-loot-tables-to-containers-in-structure"
+        ],
+        "title": "Randomised Structure Loot",
+        "description": "https://wiki.bedrock.dev/loot/randomized-structure-loot.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "structure-loot"
+        ],
+        "title": "Randomised Structure Loot",
+        "description": "https://wiki.bedrock.dev/loot/randomized-structure-loot.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "recipes"
+        ],
+        "title": "Recipes",
+        "description": "Recipes are the means of handling several item transactions, namely those occurring in crafting tables, furnaces, campfires, and brewing stands.\n\nExplanation: https://wiki.bedrock.dev/loot/recipes.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "d-recipes",
+            "doc-recipes"
+        ],
+        "title": "Recipes Documentation",
+        "description": "https://bedrock.dev/docs/stable/Recipes",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "redstone",
+            "redstone-on-blocks"
+        ],
+        "title": "Redstone in Add-Ons",
+        "description": "You may not access or edit any behaviours of redstone. At all.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "regolith"
+        ],
+        "title": "Regolith",
+        "description": "Regolith is an Addon Compiler for the Bedrock Edition of Minecraft.\nhttps://bedrock-oss.github.io/regolith/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "regolith-filters"
+        ],
+        "title": "Regolith Filters",
+        "description": "https://bedrock-oss.github.io/regolith/docs/standard-filters",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "relative-coordinates",
+            "local-coordinates"
+        ],
+        "title": "Relative Coordinates",
+        "description": "You can use `~` or `^` in place of coordinates to specify the location the command was run from. Adding a number after the symbol changes the offset from the execution point.\nThe difference is `~` offsets are relative to the world axes, while `^` is relative to the direction an entity is facing, in blocks to the left, blocks up, and then blocks forward.\n\nExamples:\n`execute @a ~ ~ ~ setblock ~5 ~5 ~5 dirt` sets the block 5 blocks positive on the x axis, 5 blocks positive on the y axis, and 5 blocks positive on the z axis to a dirt block.\n`execute @a ~ ~ ~ setblock ^5 ^5 ^5 dirt` sets the block 5 blocks to the left of the entity, 5 blocks above the entity, and 5 blocks in front of the entity to a dirt block.\n\nYou can also read about relative coordinates here:\nhttps://wiki.bedrock.dev/commands/relative-coordinates.html#relative-coordinates",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "render-controllers",
+            "render-controls"
+        ],
+        "title": "Render Controllers",
+        "description": "Render-controllers are logic packs that take short-name definitions from the Resource Entity File, and determine how they will be combined/layered/rendered in-game.\n\nLearn more: https://wiki.bedrock.dev/entities/entity-intro-rp.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "item-render-offsets-generator",
+            "my-item-texture-is-huge",
+            "item-scale"
+        ],
+        "title": "Render Offsets Generators",
+        "description": "To generate render offsets, you can use one of the following render offset generators:\n<https://github.com/Ultr4Anubis/Minecraft-Item-Scale> by Ultra\n<https://github.com/MedicalJewel105/bedrock-render-offsets-generator> by MJ105\n<https://github.com/MedicalJewel105/regolilters/tree/main/item_scale> - Regolith filter by MJ105",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "rendering",
+            "rendering-models",
+            "rendering-guide",
+            "rendering-how-to"
+        ],
+        "title": "Rendering your models",
+        "description": "https://www.blockbench.net/wiki/guides/model-rendering",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "rps",
+            "resource-pack-structure"
+        ],
+        "title": "Resource Pack File Structure",
+        "description": "The vanilla resource pack folder contains various paths and files. You can see the full folder schema here:\nhttps://wiki.bedrock.dev/documentation/pack-structure.html#top",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "rideable-block",
+            "chair"
+        ],
+        "title": "Rideable Blocks",
+        "description": "Video tutorial by Machine_Builder:  https://youtu.be/oOg2MuhC-c8",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "rotatable-block",
+            "log-like-block"
+        ],
+        "title": "Rotatable Blocks",
+        "description": "https://wiki.bedrock.dev/blocks/rotatable-blocks.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "bedrock-linux",
+            "linux-on-bedrock",
+            "linux-pe-launcher"
+        ],
+        "title": "Run Bedrock on Linux",
+        "description": "https://discord.gg/VJTZ3KaTx6",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "run-command",
+            "entity-run-command"
+        ],
+        "title": "Run Command",
+        "description": "`warning:` This method requires `experimental` toggles turned on.\n\nYou can place `run_command` into any entity *event* to play slash commands and Molang, similar to Animation Controllers. This goes alongside any `add` and `remove` keys. Please notice the lack of `/` in the command.\n\n```json\n{\n  \"add\": {\n    \"component_groups\": [\n      \"fc:normal_player\"\n    ]\n  },\n  \"run_command\": {\n    \"command\": [\n      \"give @a stick\"\n    ]\n  }\n}\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "death-effects",
+            "running-command-on-death",
+            "death-commands"
+        ],
+        "title": "Running Command on Death",
+        "description": "https://wiki.bedrock.dev/animation-controllers/death-commands.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "runtime-identifiers"
+        ],
+        "title": "Runtime Identifiers",
+        "description": "https://wiki.bedrock.dev/entities/runtime-identifier.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "runtime-broken"
+        ],
+        "title": "Runtime Identifiers break stuff!",
+        "description": "\"I added a runtime identier to my entity, and now it has weird behavior\".\n\nRuntime Identifiers add hard coded behavior to entities. This hard coded information often includes things like entity name, health, or drop table. \n\n\"Can I do anything about it?\"\n\nYou can remove the runtime identifier. That's the only thing you can do. Don't expect to use runtime identifiers without consequences.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "scan-surface-features"
+        ],
+        "title": "Scan Surface Features",
+        "description": "Every block across the surface of a chunk can be covered by a feature using scan surface features. For this reason, it is strongly recommended to choose a feature that only occupies a column\u2019s space.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#scan-surface-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "scatter-features"
+        ],
+        "title": "Scatter Features",
+        "description": "Scatter features are the most flexible and useful feature type available. Scatter features can:\n- Distribute or reposition a feature any number of times within a chunk\u2019s feature domain\n- Act as a gate to conditionally enable a feature to be placed\n- Execute MoLang within the current feature context\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#scatter-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "fancy-pantsy-docs"
+        ],
+        "title": "Schema Based Documentation",
+        "description": "https://sirlich.github.io/bedrock-schema-docs/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "d-schemas",
+            "doc-schemas"
+        ],
+        "title": "Schemas Documentation",
+        "description": "https://bedrock.dev/docs/stable/Schemas",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "gametest-uuid",
+            "uuids",
+            "script-uuid"
+        ],
+        "title": "Script API Dependencies",
+        "description": "***Average modules!***\n> name: `@minecraft/server`\n> uuid: `b26a4d4c-afdf-4690-88f8-931846312678`\n> available versions: [`0.1.0`, `1.0.0-beta`, `1.0.0`, `1.1.0-beta`]\n\n> name: `@minecraft/server-ui`\n> uuid: `2bd50a27-ab5f-4f40-a596-3641627c635e`\n> available versions: [`0.1.0`, `1.0.0-beta`]\n\n***Bedrock Dedicated Server Only!***\n> name: `@minecraft/server-net`\n> uuid: `777b1798-13a6-401c-9cba-0cf17e31a81b`\n> available versions: [`1.0.0-beta`]\n\n> name: `@minecraft/server-admin`\n> uuid: `53d7f2bf-bf9c-49c4-ad1f-7c803d947920`\n> available versions: [`1.0.0-beta`]\n\n***Very Experimental!***\n> name: `@minecraft/gametest`\n> uuid: `6f4b6893-1bb6-42fd-b458-7fa3d0c89616`\n> available versions: [`1.0.0-beta`]\n\n**Default Module Dependencies Example**\n```json\n\"dependencies\": [\n    {\n        \"description\": \"@minecraft/server\",\n        \"uuid\": \"b26a4d4c-afdf-4690-88f8-931846312678\",\n        \"version\": \"1.1.0-beta\"\n    },\n    {\n        \"description\": \"@minecraft/server-ui\",\n        \"uuid\": \"2bd50a27-ab5f-4f40-a596-3641627c635e\",\n        \"version\": \"1.0.0-beta\"\n    }\n]\n```\n> FAQ - 1.19.50",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "script-manifest",
+            "script-api-manifest"
+        ],
+        "title": "Script API - manifest.json",
+        "description": "```json\n{\n    \"format_version\": 2,\n    \"header\": {\n        \"name\": \"Bedrock Addons\",\n        \"description\": \"Script API Template\",\n        \"uuid\": \"bf67828b-e511-4c72-9922-b6dc179926f4\",\n        \"version\": [ 0, 1, 0 ],\n        \"min_engine_version\": [ 1, 20, 0 ]\n    },\n    \"modules\": [\n        {\n            \"type\": \"script\",\n            \"language\": \"javascript\",\n            \"uuid\": \"b7055392-4154-4aa8-813f-afa6291f1056\",\n            \"entry\": \"scripts/script.js\",\n            \"version\": [ 0, 1, 0 ]\n        }\n    ],\n    \n    // to use eval() and Function()\n    \"capabilities\": [ \"script_eval\" ],\n\n    \"dependencies\": [\n        {\n            \"module_name\": \"@minecraft/server\",\n            \"version\": \"1.8.0-beta\"\n        },\n        {\n            \"module_name\": \"@minecraft/server-ui\",\n            \"version\": \"1.2.0-beta\"\n        }\n    ]\n}\n```",
+        "image": null,
+        "modification_time": 1700338587
+    },
+    {
+        "tags": [
+            "script-forms",
+            "server-forms",
+            "forms",
+            "script-ui",
+            "gametest-ui",
+            "form-ui"
+        ],
+        "title": "ScriptAPI - Server Forms",
+        "description": "As of 1.19.60.x, we have 3 type of server forms\n\n**1. Action Form**\n- which includes stack of buttons\n\n**2. Message Form**\n- which includes message and YES / NO button\n\n**3. Modal Form**\n- which includes text-fields, drop-downs, toggels and sliders\n\n+ Read [documentation](https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server-ui/minecraft-server-ui#classes) for details",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "search-features"
+        ],
+        "title": "Search Features",
+        "description": "Search features search a volume for valid placement locations for a target feature. These features are a great option when positioning features with challenging placement conditions.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#search-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "sequence-features"
+        ],
+        "title": "Sequence Features",
+        "description": "Sequence features place a collection of features in spatial sequence.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#sequence-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "shaders"
+        ],
+        "title": "Shaders",
+        "description": "https://wiki.bedrock.dev/concepts/shaders.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "single-block-features"
+        ],
+        "title": "Single Block Features",
+        "description": "Single block features place a single block in the world. Single block features are typically useless on their own; their real power comes in conjunction with proxy features to construct builds.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#single-block-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "sleep",
+            "sleeping",
+            "entity-sleep",
+            "entity-sleeping",
+            "sleep-entity",
+            "sleeping-entity"
+        ],
+        "title": "Sleeping Entities",
+        "description": "https://wiki.bedrock.dev/entities/sleeping-entities.html#top",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "snap-to-surface-features"
+        ],
+        "title": "Snap-to-Surface Features",
+        "description": "Features can be pinned to a floor or ceiling when proxied by snap-to-surface features. Currently, the target feature, given with \"feature_to_snap\", can only be projected through air onto solid surfaces.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#snap-to-surface-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "snowstorm"
+        ],
+        "title": "Snowstorm",
+        "description": "https://jannisx11.github.io/snowstorm/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "solid-entities"
+        ],
+        "title": "Solid Entities",
+        "description": "https://wiki.bedrock.dev/entities/solid-entities.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "sounds",
+            "adding-sounds"
+        ],
+        "title": "Sounds in Bedrock",
+        "description": "https://wiki.bedrock.dev/concepts/sounds",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "spawn-rules"
+        ],
+        "title": "Spawn Rules",
+        "description": "https://wiki.bedrock.dev/entities/spawn-rules.html\nhttps://bedrock.dev/docs/stable/Entities#Spawn%20Rules",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "what-is-experimental",
+            "what-is-beta"
+        ],
+        "title": "Stable/Experimental/Beta",
+        "description": "**Stable**: This means the current, publicly supported version of Minecraft. Everyone plays Stable by default. \n\n**Experimental**: Experimental can be turned on per-world. If you want to use Experimental things in your addons you (and everyone who uses your addon) will need to turn on Experimental in their world. \n\n**Beta**: Beta is the most extreme \"cutting edge\" Minecraft. Beta is opt-in, meaning you need to install it separately. It will replace your stable Minecraft unless you use a version switcher. Beta players cannot play with stable players, and visa-versa.\n\n**Marketplace:** Marketplace work cannot contain beta or experimental features.\n\n*Sometimes we say exp instead of experimental*",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "structure-template-feature",
+            "structure-feature",
+            "custom-structures",
+            "generating-structures"
+        ],
+        "title": "Structure Template Features",
+        "description": "**Structure template features **generate structures by referencing saved structure files. These features trade power and flexibility for convenience.\n\nWiki Explanation:\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#structure-template-features\n\nTutorial:\nhttps://wiki.bedrock.dev/world-generation/structure-features.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "style-guide"
+        ],
+        "title": "Style Guide",
+        "description": "https://wiki.bedrock.dev/meta/style-guide.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "subpacks"
+        ],
+        "title": "Subpacks",
+        "description": "https://wiki.bedrock.dev/concepts/subpacks.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "tellraw"
+        ],
+        "title": "Tellraw",
+        "description": "https://wiki.bedrock.dev/commands/tellraw.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "all-vanilla-packs",
+            "all-packs",
+            "packs",
+            "template-packs-archive"
+        ],
+        "title": "Template Packs Archive",
+        "description": "https://bedrock.dev/packs",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "texture-layering"
+        ],
+        "title": "Texture Layering",
+        "description": "https://wiki.bedrock.dev/visuals/entity-visuals-intro.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "texturing-tips",
+            "texturing-guide",
+            "modelling-guide",
+            "modelling-tips"
+        ],
+        "title": "Texturing tips",
+        "description": "https://www.blockbench.net/wiki/guides/minecraft-style-guide",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "wiki",
+            "w"
+        ],
+        "title": "The Bedrock Wiki",
+        "description": "<:bedrock_wiki:887447576247422987> https://wiki.bedrock.dev/ <:bedrock_wiki:887447576247422987>",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "wikisrc",
+            "wiki-github"
+        ],
+        "title": "The Bedrock wiki github page",
+        "description": "Wiki:\nhttps://github.com/Bedrock-OSS/bedrock-wiki\nWiki-legacy:\nhttps://github.com/Bedrock-OSS/bedrock-wiki-legacy\nBedrock.dev:\nhttps://github.com/destruc7i0n/bedrock-dot-dev/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "beta-broken"
+        ],
+        "title": "The Beta breaks stuff!",
+        "description": "\"Something is broken in the beta\".\n\nThe beta is unstable, and buggy. This includes breaking old addons/formats, as well as inconsistently implementing new features.  \n\n\"Can I do anything about it?\"\n\nYou leave the beta. That's the only thing you can do. Don't expect to use the beta without consequences.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "naming-items"
+        ],
+        "title": "The format for naming items in .lang changed",
+        "description": "**Old**: item.sirlich:hoe.name=Hoe\n**New**: item.sirlich:hoe=Hoe\n\nEssentially you just need to remove the .name",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "throwable-item",
+            "throw"
+        ],
+        "title": "Throwable Items",
+        "description": "Non-experimental Method:\nhttps://discord.com/channels/523663022053392405/568808575984599050/875931180938178620\n\nExperimental Method:\nhttps://discord.com/channels/523663022053392405/568808575984599050/866151024255696916",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "settimeout",
+            "script-delay",
+            "script-tick-awaition",
+            "script-tick-delay"
+        ],
+        "title": "Tick Awaition",
+        "description": "since 1.19.50, we recieved two new methods that can be used for delaying function execution\n\n```js\n// next tick\n system.run(func); \n\n// like setInterval\nsystem.runSchedule( func, tickDelay );\n\n// like cancel run\nsystem.clearRun( runId );\n\n// like clearInterval\nsystem.clearRunSchedule( intervalId );\n```\n\n***Example***\nfor running code every  20ticks (1sec)\n```js\nconst TICKS_IN_SEC = 20;\n\nconst runSchedule = system.runSchedule( () => {\n    console.warn( \"show this message every \" + TICKS_IN_SEC + \" ticks\");\n}, TICKS_IN_SEC );\n\nsystem.clearRunSchedule( runSchedule ); //stop execution loop\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "trade",
+            "trades",
+            "trading",
+            "trade-tables"
+        ],
+        "title": "Trade Tables",
+        "description": "Trade tables represent the fundamental data behind trading item transactions for an entity. Trade tables are not standalone; they must be referenced from an entity component. Using the randomizing properties available to trade tables, trade offers, item counts, and cost calculations may vary across entity instances, even if all would point to the same trade table.\n\nExplanation: https://wiki.bedrock.dev/loot/trade-tables.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "tree-features"
+        ],
+        "title": "Tree Features",
+        "description": "Tree features generate tree-like shapes. Tree features allow for more customization than any other feature type, including:\n- Setting wood and leaf blocks\n- Adding tree face decorations\n- Restricting foundation and intersection blocks\n- Customizing branch frequency and angle\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#tree-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "troubleshooting"
+        ],
+        "title": "Troubleshooting",
+        "description": "Main Article:\nhttps://wiki.bedrock.dev/guide/troubleshooting.html\nTroubleshooting Blocks:\nhttps://wiki.bedrock.dev/blocks/troubleshooting-blocks.html\nTroubleshooting Items:\nhttps://wiki.bedrock.dev/items/troubleshooting-items.html\nTroubleshooting Entities:\nhttps://wiki.bedrock.dev/entities/troubleshooting-entities.html",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "tutorials",
+            "getting-started"
+        ],
+        "title": "Tutorials",
+        "description": "Here are some useful links to get started in add-on development:\n\nTutorials and Documentation:\nBedrock addon documentation: <https://bedrock.dev>\nBedrock Beginners Guide: <https://guide.bedrock.dev>\nBedrock Tutorials Wiki: <https://wiki.bedrock.dev>",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "ui-video-tutorial"
+        ],
+        "title": "UI Basics [Video]",
+        "description": "https://youtu.be/K7UyzmmML-g",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "d-ui",
+            "doc-ui"
+        ],
+        "title": "UI Documentation",
+        "description": "~~https://bedrock.dev/docs/stable/UI~~\n\nsee `?json ui`",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "ui-disambiguation"
+        ],
+        "title": "UI type",
+        "description": "There is currently 1 UI type:\n - JSON UI: Created using json config files (<#868073903703093259>)\n\nInformation about these UI types is available on the wiki, as well as Bedrock.dev.",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "uuid-generator",
+            "uuid4",
+            "uuid"
+        ],
+        "title": "UUID generator",
+        "description": "https://www.uuidgenerator.net/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "lang",
+            "localization"
+        ],
+        "title": "Understanding .lang",
+        "description": "https://wiki.bedrock.dev/concepts/text-and-translations.html\n\n**Lang Codes**\nEntities: `entity.<identifier>.name`\nBlocks: `tile.<identifier>.name`\nItems: `item.<identifier>.name`\nExperimental Items: `item.<identifier>`",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "selectors",
+            "understanding-selectors"
+        ],
+        "title": "Understanding Selectors",
+        "description": "https://wiki.bedrock.dev/commands/selectors.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "upcoming-creator-features"
+        ],
+        "title": "Upcoming Creator Features",
+        "description": "The Upcoming Creator Features experimental toggle adds entity properties and permutations.\nhttps://wiki.bedrock.dev/entities/entity-properties.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "links",
+            "useful-links"
+        ],
+        "title": "Useful Links",
+        "description": "https://wiki.bedrock.dev/meta/useful-links.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "json-ui-property",
+            "json-ui-properties",
+            "json-ui-relative-size"
+        ],
+        "title": "Using relative JSON UI properties",
+        "description": "The following can be used as valid values on JSON UI properties such as `size`, `offset`, and `anim` type elements:\n\n\u2022 `%` the percent relative to the parent element\n\u2022 `%c` the percent relative to the total width/height of the child element\n\u2022 `%cm` the the percent relative to the width/height of the minimum size of all the child elements combined\n\u2022 `%sm` the percent relative to the total width/height of the sibling element\n\u2022 `%x` the percent relative to the total width; and `%y` for the height\n\u2022 `px` can be used to refer the number of pixels inside strings\n\u2022 `+` / `-` can also be used to add or reduce the size accordingly as you want\n\nExample usage:\n```json\n\"size\": [ \"100%\", \"100%\" ],\n\"offset\": [ \"16% + 4px\", \"100%\" ]\n```\nCan also be used in `anim` type elements and animate relative to the position using `%`.\n```json\n\"to\": [ 0, \"100%\" ],\n\"from\": [ 0, 0 ]\n```",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "development-star-packs",
+            "development-*-packs",
+            "pack-caching-issues"
+        ],
+        "title": "Using the `development_*_packs` folders",
+        "description": "The correct way to create addons is by using the `development_behavior_packs` and `development_resource_packs` folders. Storing your addons here will allow you to reload the world to see addon changes, and will prevent pack caching issues.\n\nYou can work directly in the world, or in `behavior_packs`/`resource_packs`, but you need an understanding of manifest-versions and caching to avoid issues.\n\nWe highly recommend using the `development_*_packs` folders.",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "tick.json"
+        ],
+        "title": "Using tick.json",
+        "description": "tick.json is server-side file that lets you execute function files each tick, without using a command block.\n\nLink:\nhttps://wiki.bedrock.dev/commands/mcfunction.html#running-functions-through-tick-json",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "blockception-vscode-addon",
+            "vscode-code-validation",
+            "vscode-scheme-validation",
+            "blockception"
+        ],
+        "title": "VSCode Validation by Blockception",
+        "description": "Blockception's Minecraft Bedrock Development is a very useful VSCode plugin, that provides real-time validation, auto-complete, in-line documentation, as well as quite a few editor commands, such as create animation controller file. This plugin will help you write correct, linted json, and catch errors before they ever happen!\n\nLink: https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "vanilla-pack",
+            "vp"
+        ],
+        "title": "Vanilla Packs",
+        "description": "Downloadable from: https://github.com/Mojang/bedrock-samples/releases\n\nbedrock.dev archive: https://bedrock.dev/packs\nGitHub (RP & BP) : https://github.com/bedrock-dot-dev/packs\n\nExample particles: https://aka.ms/MCParticlesPack",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "vanilla-usage",
+            "vanilla",
+            "vu"
+        ],
+        "title": "Vanilla Usage",
+        "description": "Entities:\nhttps://wiki.bedrock.dev/entities/vanilla-usage-components.html\nItems:\nhttps://wiki.bedrock.dev/items/vanilla-usage-items.html#top",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "vanilla-like-ore",
+            "custom-ore"
+        ],
+        "title": "Vanilla-like ore",
+        "description": "https://wiki.bedrock.dev/blocks/vanilla-like-ore.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "vegetation-patch-features"
+        ],
+        "title": "Vegetation Patch Features",
+        "description": "Vegetation patches place sub-features (often vegetation) within a square-like boundary (the patch).\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#vegetation-patch-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "hacking",
+            "griefing",
+            "leaking"
+        ],
+        "title": "We don't support cheating, griefing, hacking, leaking or trolling",
+        "description": "We do not tolerate cheating, griefing, hacking, leaking or trolling.\n\nIf you are reading this note, you have most likely asked or posted something that falls into one of these categories. Examples can range from creating hacks for Bedrock edition and breaking marketplace DRM, to crashing servers or posting leaked content.\n\nPlease bring these topics elsewhere, or better yet, don't engage with them at all.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "weighted-random-features"
+        ],
+        "title": "Weighted Random Features",
+        "description": "Weighted random features randomly select a feature from a list. They are typically used to provide variation across a set of related features.\n\nhttps://wiki.bedrock.dev/world-generation/feature-types.html#weighted-random-features",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "the-rails-end-here"
+        ],
+        "title": "Welcome Stranger",
+        "description": "",
+        "image": "https://cdn.discordapp.com/attachments/749802770957074502/970657045361594429/unknown.png",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "what-is-molang",
+            "whats-molang"
+        ],
+        "title": "What Is MoLang?",
+        "description": "MoLang is a simple expression-based language designed for fast, data-driven calculation of values at run-time. Molangs structure is largely based on simple 'C' language-family style syntax.\n\nDocumentation: https://bedrock.dev/docs/stable/Molang\n\n**Where is MoLang Used?**\n\nMoLang is used in various subsystems within Minecraft Addons. For example: `Client Entities, Animations, Animation Controllers`, and more.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "mcfunction"
+        ],
+        "title": "What are functions?",
+        "description": "https://wiki.bedrock.dev/commands/mcfunction.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "what-the-heck-are-scripts",
+            "what-is-gametest",
+            "what-is-scripting",
+            "gametest-vs-scripting",
+            "scripting-vs-gametest"
+        ],
+        "title": "What are scripts?",
+        "description": "\"Scripts\" are written in **JavaScript**, and talk directly to the **Minecraft API**.\nThere are two kinds, **Script API** and the older, deprecated **Scripting API**.\n\n**Script API**\nis a new JavaScript framework, which is frequently updated, and has active community outreach.\n\nThere is considerable investment in documenting the system and several developers working on it, it's likely to stay and likely to get developed further.\n\n- This API requires the feature switch to be enabled on the world settings\n- see `?script api` for the documention.\n\n**Scripting API**\n\nScripting API is the original JavaScript API from Microsoft. Note that is is no longer supported and is fully removed from the game.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "pack-ask",
+            "anyone-has-a-pack"
+        ],
+        "title": "What are you doing here?",
+        "description": "You found this place to make addons and resource packs or ask for them? Consider making simple packs yourself!",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "acronyms"
+        ],
+        "title": "What does that acronym mean?",
+        "description": "https://wiki.bedrock.dev/meta/style-guide.html#acronyms-when-discussing",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "the-editor",
+            "what-editor-to-use",
+            "visual-studio-code",
+            "editor",
+            "vscode"
+        ],
+        "title": "What editor to use?",
+        "description": "https://wiki.bedrock.dev/guide/software-preparation#picking-an-editor",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "what-is-format-version",
+            "what-format-version-should-i-use"
+        ],
+        "title": "What format version should I use?",
+        "description": "\"format_version\" tells the Minecraft API which version of the add-on system to use for a specific file. Its sadly not as simple as matching the game version however, since some systems are not updated very frequently, so you may have to use an old format version with them!\n\nYou can read more about Format Versions here:\nhttps://wiki.bedrock.dev/guide/format-version.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "content-log",
+            "cl"
+        ],
+        "title": "What is Content Log?",
+        "description": "The content log gives you live feedback for most errors that could occur while developing your add-on.\nhttps://wiki.bedrock.dev/guide/troubleshooting.html#content-log",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "json",
+            "learn-json"
+        ],
+        "title": "What is Json?",
+        "description": "https://wiki.bedrock.dev/guide/understanding-json.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "what-is-regolith"
+        ],
+        "title": "What is Regolith?",
+        "description": "Regolith is a program that you can use to run various tools called `\"filters\"` to modify resource packs and behavior packs. The filters can be written in different languages and can have their own configuration. Regolith runs the filters in an order defined in regolith configuration file. The RP and BP that are passed to regolith as an input are copied to different location and than modified. The filter is basically any program/script which does something with resource pack or behavior pack.\n\nRegolith is a tool which hopefully will help people standarize the scripts that they use to speed up their workflows. Minecraft addon system is far from perfect and its often necessery to generate a lot of code. Regolith may help with making these code generators easier to reuse. Use of regolith isn't limited only to generating code. Some of the filters could be used for different task like printing some stats of the project, uploading some files to the internet or looking for errors.\n\nGitHub:\nhttps://github.com/Bedrock-OSS/regolith\nWebsite:\nhttps://bedrock-oss.github.io/regolith/",
+        "image": "",
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "contents.json"
+        ],
+        "title": "What is contents.json?",
+        "description": "The `contents.json` file is meant to list everything in your addon for better performance. Here's a link to a more in-depth description:\nhttps://wiki.bedrock.dev/concepts/contents.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "texture_list.json"
+        ],
+        "title": "What is texture_list.json?",
+        "description": "The `textures_list.json` file is meant to list every texture in your addon for better performance. Here's a link to a more in-depth description:\nhttps://wiki.bedrock.dev/concepts/texture-list.html",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "look_at_player-is-slow"
+        ],
+        "title": "Why is look_at_player so slow/glitchy?",
+        "description": "`look_at_player` is a *behavior*. The first thing you should adjust is the, priority and the probability. \n\nThe next thing to realize is that Minecraft has hard-coded concept of `body` and `head` bones (groups). The `head` bone is hard-coded to react FIRST, then the rest of the bones follow. \n\nIf your entity has a head (like a dog), make sure to name the geometry correctly so that Minecraft can use this information. If your entity does NOT have a head (like a signboard, or a hologram), you should decide whether you want the entity to react FAST (name the top-bone `head`), or slow (name it `body`, or anything else).\n\nBeing aware of the bone names of `body` and `head` is one way you can make `look_at_player` react better.\n\nStill not happy? Get over it. Its just sometimes glitchy or slow. The component is designed to naturally make entities look at the player. Its not designed to instantly snap to their location. Even in a best-case scenario  you will need to deal with the hard-coded interpolation.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "window-apps-folder"
+        ],
+        "title": "Window Apps Folder",
+        "description": "The Window Apps Folder has additional files, not available in the VRP/VBP downloads. \n\n**Location:** `ProgramFiles/WindowsApps/someminecraftfolderuwp`\n**How to get Access:** https://www.maketecheasier.com/access-windowsapps-folder-windows-10/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "xy-problem"
+        ],
+        "title": "XY Problem",
+        "description": "https://xyproblem.info/",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "bedrock.dev-issues"
+        ],
+        "title": "bedrock.dev issues",
+        "description": "Bedrock.dev is built upon existing documentation provided by Minecraft. It is pretty much impossible to maintain this documentation, since whenever a new version releases, mojang deletes all the old documentation and replaces it with the new version. Any edits we make are erased.\n\nThings like missing components, mislabeled queries or even outdated information is not the fault of destruction, and is rather the fault of Mojang. \n\nWe are looking into making documentation fixes persistent, but until that happens there is nothing we can do.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "bridge"
+        ],
+        "title": "bridge. Addon Editor",
+        "description": "bridge. <:bridge:892791393007861821>  is a powerful add-on editor designed to speed up your development process. It provides a rich editing experience for all files inside behavior and resource packs (JavaScript, JSON and functions) and provides a powerful work environment. Unleash the full power of add-ons with bridge. plugins and make use of rich auto-completions provided as you navigate through a file.\n\nLink: https://bridge-core.github.io/\nGetting Started: https://bridge-core.app/editor-docs/getting-started/\nDiscord invite: https://discord.gg/swYxDwf",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "query.scoreboard"
+        ],
+        "title": "query.scoreboard",
+        "description": "`query.scoreboard` is a special query, which functions different on the server/client side. \n\n**BP**, such as BP animation controllers: This query always works here!\n**RP**, such as render controllers or animations: **Only works If the scoreboard is set to display.**\n\nWhile this may feel like a bug, it is actually intended behavior. Microsoft confirmed that this is correct, and how the feature was written.",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "wiki-issues",
+            "wiki-suggestions"
+        ],
+        "title": "wiki.bedrock.dev Issues and Suggestions",
+        "description": "Use `?wiki-github` or join Bedrock OSS if you have any suggestions for wiki.bedrock.dev:\nhttps://discord.gg/XjV87YN",
+        "image": null,
+        "modification_time": 0
+    },
+    {
+        "tags": [
+            "script-demo"
+        ],
+        "title": "Script API - Hello World",
+        "description": "```js\nimport { world } = \"@minecraft/server\"\n\nworld .afterEvents .playerSpawn .subscribe( eventData => {\n    eventData .player .sendMessage( \"Hello World\" )\n} )\n\n```",
+        "image": null,
+        "modification_time": 1700339168
+    }
+]

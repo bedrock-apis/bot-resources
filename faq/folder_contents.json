@@ -6,6 +6,7 @@
         "./scripting-faq/scripting_test.json",
 
         "./general/discord-invite.json",
-        "./general/contribute.json"
+        "./general/contribute.json",
+        "./general/old-mapped.json"
     ]
 }
