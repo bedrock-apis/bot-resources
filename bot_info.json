@@ -3,7 +3,9 @@
     "1138527696310251681": {
         "permission": "owner",
         "allow-faq": true,
-        "faq-channels":{},
+        "faq-channels":{
+            "1138559062703874059": false
+        },
         "faq-management": [
             "1227333696743407760# FAQ Manager role"
         ] 
