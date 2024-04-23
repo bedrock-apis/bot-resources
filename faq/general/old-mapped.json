@@ -1,6 +1,16 @@
 [
    {
       "tags": [
+         "all-vanilla-packs",
+         "all-packs",
+         "packs",
+         "template-packs-archive"
+      ],
+      "title": "Vanilla Packs",
+      "body": "Downloadable from: https://github.com/Mojang/bedrock-samples/releases\\n\\nbedrock.dev archive: https://bedrock.dev/packs\\nGitHub (RP & BP) : https://github.com/bedrock-dot-dev/packs\\n\\nExample particles: https://aka.ms/MCParticlesPack\\n\\nJava Edition's Vanilla Packs: https://mcasset.cloud/"
+   },
+   {
+      "tags": [
          "entity-inventory-name-unknown",
          "unknown"
       ],
@@ -1827,16 +1837,6 @@
       ],
       "title": "Tellraw",
       "body": "https://wiki.bedrock.dev/commands/tellraw.html"
-   },
-   {
-      "tags": [
-         "all-vanilla-packs",
-         "all-packs",
-         "packs",
-         "template-packs-archive"
-      ],
-      "title": "Vanilla Packs",
-      "body": "Downloadable from: https://github.com/Mojang/bedrock-samples/releases\\n\\nbedrock.dev archive: https://bedrock.dev/packs\\nGitHub (RP & BP) : https://github.com/bedrock-dot-dev/packs\\n\\nExample particles: https://aka.ms/MCParticlesPack\\n\\nJava Edition's Vanilla Packs: https://mcasset.cloud/"
    },
    {
       "tags": [
