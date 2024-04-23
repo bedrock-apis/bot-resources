@@ -1835,8 +1835,8 @@
          "packs",
          "template-packs-archive"
       ],
-      "title": "Template Packs Archive",
-      "body": "https://bedrock.dev/packs"
+      "title": "Vanilla Packs",
+      "body": "Downloadable from: https://github.com/Mojang/bedrock-samples/releases\\n\\nbedrock.dev archive: https://bedrock.dev/packs\\nGitHub (RP & BP) : https://github.com/bedrock-dot-dev/packs\\n\\nExample particles: https://aka.ms/MCParticlesPack\\n\\nJava Edition's Vanilla Packs: https://mcasset.cloud/"
    },
    {
       "tags": [
