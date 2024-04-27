@@ -1,0 +1,5 @@
+name: unknown-entity-inventory-name
+title: '"Unknown" in inventories'
+body: |
+    You can make an entity with named inventory this way:
+    Summon entity via command: `/summon furniture:fridge_upper_container tile.furniture:fridge_upper.name ~~~` then put `tile.furniture:fridge_upper.name=Freezer` in the lang file

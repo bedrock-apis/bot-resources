@@ -1,0 +1,7 @@
+name: contents
+alises: [ contents.json ]
+title: What is contents.json?
+body: |
+    The `contents.json` file is meant to list everything in your add-on for better performance.
+
+    Here's a link to a more in-depth description: https://wiki.bedrock.dev/concepts/contents.html

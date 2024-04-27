@@ -1,0 +1,7 @@
+name: blockception
+alises: [ blockception-vscode-addon, vscode-code-validation, vscode-scheme-validation ]
+title: VSCode Validation by Blockception
+body: |
+    Blockception's Minecraft Bedrock Development is a very useful VSCode plugin, that provides real-time validation, auto-complete, in-line documentation, as well as quite a few editor commands, such as create animation controller file. This plugin will help you write correct, linted json, and catch errors before they ever happen!
+
+    Link: https://marketplace.visualstudio.com/items?itemName=BlockceptionLtd.blockceptionvscodeminecraftbedrockdevelopmentextension

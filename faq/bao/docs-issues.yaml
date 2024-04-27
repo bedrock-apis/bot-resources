@@ -1,0 +1,8 @@
+name: docs-issues
+title: bedrock.dev issues
+body: |
+    Bedrock.dev is built upon existing documentation provided by Minecraft. It is pretty much impossible to maintain this documentation, since whenever a new version releases, mojang deletes all the old documentation and replaces it with the new version. Any edits we make are erased.
+
+    Things like missing components, mislabeled queries or even outdated information is not the fault of destruction, and is rather the fault of Mojang.
+
+    We are looking into making documentation fixes persistent, but until that happens there is nothing we can do.

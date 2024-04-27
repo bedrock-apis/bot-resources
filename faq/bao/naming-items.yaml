@@ -1,0 +1,7 @@
+name: naming-items
+title: The format for naming items in .lang changed
+body: |
+    **Old**: item.sirlich:hoe.name=Hoe
+    **New**: item.sirlich:hoe=Hoe
+
+    Essentially you just need to remove the .name

@@ -1,0 +1,18 @@
+name: formatting-code
+title: Formatting Your JSON Or JS Code
+body: |
+    Please format your code as code-blocks! This makes the text monospaced, and has support for syntax highlighting.
+
+    **JSON**
+    \`\`\`json
+    {
+        "example": 123
+    }
+    \`\`\`
+
+    **JavaScript**
+    \`\`\`js
+        console.log("Hello World");
+    \`\`\`
+
+    The character used here is the **backtick**. This symbol is usually at the top left of your keyboard, occupying the tilde key (~). On mobile, it will be on the second or third page of symbols.

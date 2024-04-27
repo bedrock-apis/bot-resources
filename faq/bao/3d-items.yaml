@@ -1,0 +1,7 @@
+name: 3d-items
+alises: [ attachable ]
+title: 3D Items
+body: |
+    Attachables are a system in resource packs to give items custom models and animations when held.
+
+    https://wiki.bedrock.dev/items/attachables.html

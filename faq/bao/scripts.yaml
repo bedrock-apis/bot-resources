@@ -1,0 +1,17 @@
+name: scripts
+aliases: [ scriptapi, scripting, what-is-scripting ]
+title: What are scripts?
+body: |
+    Intro to ScriptAPI: https://aka.ms/startwithmcscript
+
+    Intro to Tests: https://docs.microsoft.com/en-us/minecraft/creator/documents/gametestgettingstarted
+
+    Official Docs: https://docs.microsoft.com/en-us/minecraft/creator/scriptapi
+
+    Community Docs: https://wiki.bedrock.dev/scripting/game-tests
+
+    Script API examples: https://github.com/JaylyDev/ScriptAPI
+
+    2021 Q&A: https://wiki.bedrock.dev/scripting/gametest-qna.html
+
+    2022 Q&A: https://wiki.bedrock.dev/scripting/scripting-editor-qna.html
