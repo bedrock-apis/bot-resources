@@ -1,9 +1,10 @@
 {
-    "tags":[
-        "api-sus",
-        "lmaos"
-    ],
+    "name":"test-faq",
     "title":"Test FQA",
+    "aliases": [
+        "lmao",
+        "api-sus"
+    ],
     "body":"This FQA will be deleted after we have more than 3 FQA entires",
     "image":"test-id"
 }
