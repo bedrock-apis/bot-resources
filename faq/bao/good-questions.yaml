@@ -1,0 +1,11 @@
+name: good-questions
+title: How To Ask Good Questions
+body: |
+    Be specific and include relevant details about the question upfront.
+
+    - What are you trying to accomplish?
+    - If you have code, which part is not working? Any content logs?
+    - What have you already tried?
+    - Have you searched the Bedrock Wiki?
+
+    https://xyproblem.info/

@@ -1,0 +1,12 @@
+name: escape-characters
+title: Escaping Characters
+body: |
+    In json, a string is created: `\"like this\"`. As you can notice, the `\"` character is used to show the beginning and the end of the string.
+
+    If you want to write a string that includes quotes, you need to \"escape\" it, by using backslashes: `\"a json \\\"string\\\" with quotes\"`. In Minecraft, the backslash character will disappear before being outputted.
+
+    Examples:
+    ```
+    \"/execute @e[type=item,name=\\\"Rotten Flesh\\\"] ~~~ give @p stonebrick 1 0\"
+    \"/tellraw @a {\\\"rawtext\\\":[{\\\"text\\\":\\\"Hello World!\\\"}]}\"
+    ```

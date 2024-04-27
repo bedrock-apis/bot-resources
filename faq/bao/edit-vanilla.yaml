@@ -1,0 +1,12 @@
+name: edit-vanilla
+title: What Vanilla Things Can We Modify?
+body: |
+    **Can**
+    - Entities
+    - Features
+
+    **Can't**
+    - Blocks
+    - Items
+    - Biomes
+    - Dimensions

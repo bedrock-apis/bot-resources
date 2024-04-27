@@ -1,0 +1,8 @@
+name: dev-packs
+title: Using the `development_*_packs` folders
+body: |
+    The correct way to create addons is by using the `development_behavior_packs` and `development_resource_packs` folders. Storing your addons here will allow you to reload the world to see addon changes, and will prevent pack caching issues.
+
+    You can work directly in the world, or in `behavior_packs`/`resource_packs`, but you need an understanding of manifest-versions and caching to avoid issues.
+
+    We highly recommend using the `development_*_packs` folders.

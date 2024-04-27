@@ -1,0 +1,19 @@
+name: javascript
+aliases: [ js, learn-js ]
+title: Learn JavaScript
+body: |
+    As the Script API is a framework built on JavaScript code, having an understanding of JavaScript is key.
+
+    If you are being shown this, then you most likely are a beginner with JS and could use a little guidance. 
+
+    **Videos on Learning JavaScript**
+    [Javascript in 1 hour](https://youtu.be/W6NZfCO5SIk)
+    [Javascript Classes in 1 hour](https://youtu.be/PFmuCDHHpwk)
+
+    **Web Guide:**
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+
+    **Reference Sites:**
+    https://www.w3schools.com/jsref/default.asp
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+    https://javascript.info

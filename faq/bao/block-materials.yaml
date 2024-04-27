@@ -1,0 +1,6 @@
+name: block-materials
+title: Block render methods
+body: |
+    There are four materials for blocks: `opaque` (default), `double_sided`, `alpha_test`, and `blend`
+
+    learn more about these materials here: https://wiki.bedrock.dev/blocks/block-components.html#material-instances

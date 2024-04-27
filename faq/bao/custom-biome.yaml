@@ -1,0 +1,6 @@
+name: custom-biome
+title: Can I make Custom Biomes?
+body: |
+    No. Custom biomes have been broken since 1.18. Mojang is fully aware of this and working hard to bring back this capability.
+
+    Here is the bug report: https://bugs.mojang.com/browse/MCPE-100700

@@ -1,5 +1,6 @@
 {
-    "tags":[
+    "name":"scriptapi",
+    "aliases":[
         "script-start",
         "scripting",
         "script-first",

@@ -1,0 +1,9 @@
+name: molang
+title: What is MoLang?
+body: |
+    MoLang is a simple expression-based language designed for fast, data-driven calculation of values at run-time. Molangs structure is largely based on simple 'C' language-family style syntax.
+
+    Documentation: https://bedrock.dev/docs/stable/Molang
+
+    **Where is MoLang Used?**
+    MoLang is used in various subsystems within Minecraft Addons. For example: `Client Entities, Animations, Animation Controllers`, and more.

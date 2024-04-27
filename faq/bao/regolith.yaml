@@ -1,0 +1,10 @@
+name: regolith
+title: What is Regolith?
+body: |
+    Regolith is a program that you can use to run various tools called `\"filters\"` to modify resource packs and behavior packs. The filters can be written in different languages and can have their own configuration. Regolith runs the filters in an order defined in regolith configuration file. The RP and BP that are passed to regolith as an input are copied to different location and than modified. The filter is basically any program/script which does something with resource pack or behavior pack.
+
+    Regolith is a tool which hopefully will help people standarize the scripts that they use to speed up their workflows. Minecraft add-on system is far from perfect and it's often necessery to generate a lot of code. Regolith may help with making these code generators easier to reuse. Use of regolith isn't limited only to generating code. Some of the filters could be used for different task like printing some stats of the project, uploading some files to the internet or looking for errors.
+
+    GitHub: https://github.com/Bedrock-OSS/regolith
+
+    Website: https://bedrock-oss.github.io/regolith/

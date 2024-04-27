@@ -1,0 +1,6 @@
+name: nbt-studio
+title: NBT Studio
+body: |
+    NBT Studio is an NBT editing application, the spiritual successor to NBTExplorer. It has been rewritten completely from scratch to support a vast array of new features, while keeping the familiar layout of controls. New features include Bedrock support, SNBT support, undo/redo functionality, drag and drop, multiselect, and more! It's called Studio to make it sound more important than it really is.
+
+    https://github.com/tryashtar/nbt-studio/releases

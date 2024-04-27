@@ -1,0 +1,6 @@
+name: format-version
+title: What format version should I use?
+body: |
+    "format_version" tells the Minecraft API which version of the add-on system to use for a specific file. It's sadly not as simple as matching the game version however, since some systems are not updated very frequently. You may have to use an old format version with them!
+
+    You can read more about format versions here: https://wiki.bedrock.dev/guide/format-version.html

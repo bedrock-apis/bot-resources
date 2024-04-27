@@ -1,0 +1,11 @@
+name: lang
+alises: [ localization ]
+title: Understanding .lang
+body: |
+    https://wiki.bedrock.dev/concepts/text-and-translations.html
+
+    **Lang Codes**
+    Entities: `entity.<identifier>.name`
+    Blocks: `tile.<identifier>.name`
+    Items: `item.<identifier>.name`
+    Experimental Items: `item.<identifier>`

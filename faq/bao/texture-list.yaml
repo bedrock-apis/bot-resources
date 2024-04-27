@@ -1,0 +1,6 @@
+name: texture-list
+title: What is texture_list.json?
+body: |
+    The `textures_list.json` file is meant to list every texture in your add-on for better performance.
+
+    Link to a more in-depth description: https://wiki.bedrock.dev/concepts/texture-list.html

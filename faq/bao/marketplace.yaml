@@ -1,0 +1,16 @@
+name: marketplace
+title: Does It Work on the Marketplace?
+body: |
+    **Not allowed**
+    - Anything beta
+    - Anything experimental
+    - Shaders
+    - Guns, drugs, violence, religion etc.
+
+    **Allowed**
+    Everything that isn't shown above. Custom items for example are allowed, as long as you don't use the new experimental components.
+
+    Pretty much, if it works in a non-beta, non-experimental world, and it isn't using scripts or shaders, its good.
+
+    **Why did I see a map using Experimental?**
+    Some maps get special permission from Microsoft to use Experimental. These are usually free, or intended specifically to show-off the new creator-features. You are unlikely to get the same permission.

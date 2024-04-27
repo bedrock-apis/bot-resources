@@ -1,0 +1,7 @@
+name: tick
+alises: [ tick.json ]
+title: Using tick.json
+body: |
+    `tick.json` is server-side file that lets you execute function files each tick, without using a command block.
+
+    Link: https://wiki.bedrock.dev/commands/mcfunctions.html#tick-json

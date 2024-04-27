@@ -1,0 +1,6 @@
+name: json-lint
+title: Linting JSON
+body: |
+    Linting is the ability to validate code as correct, or incorrect. JsonLinter is a website that will point out json-formatting issues like mismatches curly braces for you. 
+
+    https://jsonlint.com/

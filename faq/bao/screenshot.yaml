@@ -1,0 +1,6 @@
+name: screenshot
+title: Please, no screenshots or photos!
+body: |
+    Screenshots are hard to read, and photos even more so. This is especially true if you are using bridge or another tree editor, as this format obscures the JSON format.
+
+    We can help you best if you copy and paste your code here, or send it directly as a file.

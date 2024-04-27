@@ -1,0 +1,21 @@
+name: placement-pass
+title: Placement Passes
+body: |
+    Placement passes can just be thought of as a named ordering for when placement of a feature rule's target feature should occur.
+    *Nothing special occurs during a pass; it's just a name.*
+    The available passes are:
+
+    - `pregeneration_pass`
+    - `first_pass`
+    - `before_underground_pass`
+    - `underground_pass`
+    - `after_underground_pass`
+    - `before_surface_pass`
+    - `surface_pass`
+    - `after_surface_pass`
+    - `before_sky_pass`
+    - `sky_pass`
+    - `after_sky_pass`
+    - `final_pass`
+
+    NoteL `pregeneration_pass` is reserved for carver features.

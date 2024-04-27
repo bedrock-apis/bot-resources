@@ -1,0 +1,8 @@
+name: deferred-and-shaders
+aliases: [ deferred, shaders, graphics ]
+title: Deferred Rendering Pipeline and Shaders
+body: |
+    - **Shader** is a program that usually runs on the GPU with the purpose of rendering things (calculating color of pixels) or otherwise utilizing GPU for other computations. Shaders, in the context of Bedrock, are modifications that modify or completely replace existing vanilla shader code, which can significantly alter the way objects are rendered in the game. Usually, bedrock shaders enchance the look of the game by modifying the way terrain, entities and clouds are rendered.
+    - **Deferred Rendering Pipeline** is a graphics mode introduced to bedrock in preview 1.20.30.20. It offers various data driven options for graphics customization. However, one thing it does not offer is shaders. It is a common misconception to call either the deferred pipeline or its customization packs as shaders, however neither can be accurately described as such. Deferred Pipeline is a graphics mode, while its packs can be best described as graphics customization or extension packs. Or just graphics packs for short.
+    ### Why is it important to differentiate between both terms?
+    Both Deferred Pipeline and Shaders are ways to customize the graphics in Bedrock, however the key difference is that shaders are not officially supported. Calling graphics packs as shaders causes a lot of frustration and confusion in the community and among add-on and shader developers.
