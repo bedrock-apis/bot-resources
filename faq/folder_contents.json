@@ -3,6 +3,7 @@
     "files":[
         "./scripting-faq/scripting_run.json",
         "./scripting-faq/starting_with_scripting.json",
+        
         "./bao/3d-items.yaml",
         "./bao/acronyms.yaml",
         "./bao/animation-controllers.yaml",
