@@ -7,5 +7,8 @@
         "faq-management": [
             "1227333696743407760# FAQ Manager role"
         ] 
+    },
+    "862462061594017802": {
+        "allow-faq": true
     }
 }
