@@ -1,11 +1,10 @@
 {
-    "tags":[
-        "invite",
+    "name":"invite",
+    "aliases":[
         "discord",
-        "invite-link",
-        "discord-link"
+        "link"
     ],
     "title": "Invite - Links",
-    "body": "**Bedrock APIs** is focused on researching script APIs, its feedback and creating various projects with that theme,  documentation, \"meta\" topics related to making scripts for addon development. It is not a server for beginners, but you are always welcome.\r\n\r\n    <:bedrockapis:1196868945450369135> https://discord.gg/38M6A2RvKk <:bedrockapis:1196868945450369135>\r\n\r\n**Bedrock Add-Ons** is a help & discussion community for Add-Ons. Here, you can discuss addons, get help, and share your creations.\r\n\r\n    <:bao_logo_old:1196878567401853089> https://discord.gg/pytC8zKHPn <:bao_logo_old:1196878567401853089>\r\n\r\n**Bedrock OSS** (Bedrock Open Source Software) exists to discuss, support, and collaborate on Minecraft Bedrock projects, tooling, and documentation. The focus here is on programming, documentation, and other \"meta\" topics related to making addons.\r\n\r\n    <:oss_logo_old:1196878570035888333> https://discord.gg/XjV87YN <:oss_logo_old:1196878570035888333>",
+    "body": "**Bedrock APIs** is focused on researching script APIs, its feedback and creating various projects with that theme,  documentation, \"meta\" topics related to making scripts for addon development. It is not a server for beginners, but you are always welcome.\r\n\r\n    <:bedrockapis:1284496399974535219> https://discord.gg/38M6A2RvKk <:bedrockapis:1284496399974535219>\r\n\r\n**Bedrock Add-Ons** is a help & discussion community for Add-Ons. Here, you can discuss addons, get help, and share your creations.\r\n\r\n    <:bao_logo_old:1284496321507758142> https://discord.gg/pytC8zKHPn <:bao_logo_old:1284496321507758142>\r\n\r\n**Bedrock OSS** (Bedrock Open Source Software) exists to discuss, support, and collaborate on Minecraft Bedrock projects, tooling, and documentation. The focus here is on programming, documentation, and other \"meta\" topics related to making addons.\r\n\r\n    <:oss_logo_old:1284496290553663592> https://discord.gg/XjV87YN <:oss_logo_old:1284496290553663592>",
     "link": "https://discord.gg/38M6A2RvKk"
 }

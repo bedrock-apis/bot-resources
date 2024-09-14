@@ -3,6 +3,11 @@
     "files":[
         "./scripting-faq/scripting_run.json",
         "./scripting-faq/starting_with_scripting.json",
+        "./general/contribute.json",
+        "./general/discord-invite.json",
+        "./bao/javascript.yaml"
+        /* 
+        We dont need all of these
         
         "./bao/3d-items.yaml",
         "./bao/acronyms.yaml",
@@ -62,6 +67,6 @@
         "./bao/vanilla-packs.yaml",
         "./bao/vanilla-usage.yaml",
         "./bao/wiki-issues.yaml",
-        "./bao/windows-app-folder.yaml"
+        "./bao/windows-app-folder.yaml"*/
     ]
 }

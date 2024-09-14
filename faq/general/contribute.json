@@ -1,8 +1,8 @@
 {
-    "tags":[
+    "name": "contribute",
+    "aliases":[
         "faq",
-        "tempaltes",
-        "contribute"
+        "templates"
     ],
     "title": "Contribution",
     "body": "- [**FAQ & Templates**](<https://github.com/bedrock-apis/bot-resources>) Editing FAQ, Templates, and other bot resources.\n- [**Community Bot**](<https://github.com/bedrock-apis/community-bot>) The source code of the bot it self.\n- [**Scripting Wiki**](<https://github.com/bedrock-apis/wiki>) Development of our wiki hosted on github.\n\nCheck our github organization [here](<https://github.com/bedrock-apis>).",
