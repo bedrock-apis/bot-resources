@@ -1,0 +1,9 @@
+name: undefined
+alises: [reference-error]
+title: Undefined
+body: |
+  If something is not defined it is simply undefined, so please don't try to read properties from undefined, because undefined has no properties.
+
+  Here check out this blog that talks about undefined and trying to read their properties, https://bobbyhadz.com/blog/javascript-cannot-read-property-of-undefined 
+
+  Here is a second one that discusses undefined and reference error: https://rollbar.com/blog/javascript-referenceerror/
