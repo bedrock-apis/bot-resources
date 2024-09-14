@@ -2,8 +2,8 @@
     "type":"faq",
     "files":[
         "./scripting-faq/scripting_run.json",
-        "./scripting-faq/starting_with_scripting.json",
-        
+        "./scripting-faq/starting_with_scripting.json"
+        /*
         "./bao/3d-items.yaml",
         "./bao/acronyms.yaml",
         "./bao/animation-controllers.yaml",
@@ -62,6 +62,6 @@
         "./bao/vanilla-packs.yaml",
         "./bao/vanilla-usage.yaml",
         "./bao/wiki-issues.yaml",
-        "./bao/windows-app-folder.yaml"
+        "./bao/windows-app-folder.yaml"*/
     ]
 }

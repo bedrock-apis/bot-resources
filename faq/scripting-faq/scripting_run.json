@@ -5,7 +5,7 @@
         "system",
         "delay",
         "wait",
-        "timeout",
+        "settimeout",
         "interval"
     ],
     "title": "System - Run Timeout",
