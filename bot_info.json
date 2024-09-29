@@ -3,6 +3,8 @@
     "1138527696310251681": {
         "permission": "owner",
         "allow-faq": true,
+        "editor-updates": "1290033528171663400",
+        "editor-updates-role": "1290036027477721171",
         "welcome-squad": "1284781612243877928",
         "faq-channels":{
             "1138559062703874059": false
