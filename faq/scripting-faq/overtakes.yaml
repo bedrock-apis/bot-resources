@@ -1,0 +1,37 @@
+name: overtakes
+alises: [prototypes]
+title: Class Prototype Overtaking
+body: |
+  The `OverTakesJS` function is a powerful tool for manipulating JavaScript prototypes. It creates a clone of a given prototype and sets this clone as the prototype of a specified object. This allows the object to inherit properties and methods from the clone. Additionally, it merges the properties and methods of the object into the original prototype.
+
+  Key features include:
+  - **Prototype Cloning:** Creates a new prototype based on the original, ensuring the object inherits from this clone.
+  - **Property Transfer:** Merges the object's properties into the original prototype, allowing shared behavior across instances.
+  - **`super` Keyword:** Enables calling original methods from the prototype, useful for extending functionality.
+  - **`this` Keyword:** Refers to the current object instance, allowing access to its properties and methods.
+
+  This function is useful for dynamically enhancing objects and prototypes, providing a flexible way to manage inheritance and method overriding.
+  ```js
+  function OverTakesJS(prototype, object) {
+    const clone = Object.create(Object.getPrototypeOf(prototype), Object.getOwnPropertyDescriptors(prototype));
+    Object.setPrototypeOf(object, clone);
+    Object.defineProperties(prototype, Object.getOwnPropertyDescriptors(object));
+    return clone;
+  }
+  ```
+  Example for Player prototype modification
+
+  ```js
+  import { Player } from "@minecraft/server";
+
+  OverTakesJS(Player.prototype, {
+    get healths() {return this.getComponent("health").currentValue},
+    set healths(s) { this.getComponent("health").setCurrentValue(s) }, 
+    sendMessage(...messages){
+        if(messages.length === 1) super.sendMessage(typeof messages[0] === "object"? messages[0]:(messages[0] + ""))
+        else super.sendMessage(messages.join(" "));
+    }
+  });
+
+  const currentHelth = player.healths;
+  ```

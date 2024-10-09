@@ -3,6 +3,7 @@
     "files":[
         "./scripting-faq/scripting_run.json",
         "./scripting-faq/starting_with_scripting.json",
+        "./scripting-faq/overtakes.yaml",
         "./scripting-faq/undefined.yaml",
         "./general/contribute.json",
         "./general/discord-invite.json",
