@@ -1,5 +1,5 @@
 name: undefined
-alises: [reference-error]
+aliases: [reference-error]
 title: Undefined
 body: |
   If something is not defined it is simply `undefined`, so please don't try to read properties from `undefined`, because `undefined` has no properties.
