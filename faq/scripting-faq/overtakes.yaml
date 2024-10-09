@@ -1,5 +1,5 @@
 name: overtakes
-alises: [prototypes]
+aliases: [prototypes]
 title: Class Prototype Overtaking
 body: |
   The `OverTakesJS` function is a powerful tool for manipulating JavaScript prototypes. It creates a clone of a given prototype and sets this clone as the prototype of a specified object. This allows the object to inherit properties and methods from the clone. Additionally, it merges the properties and methods of the object into the original prototype.
